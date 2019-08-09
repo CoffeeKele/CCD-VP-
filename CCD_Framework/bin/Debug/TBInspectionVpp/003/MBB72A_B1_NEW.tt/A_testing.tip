@@ -1,0 +1,876 @@
+// KAIROVersion 2.00
+GOTO Belt_1_TO_1
+GOTO Belt_2_TO_2
+GOTO Belt_1_TO_2
+GOTO Belt_2_TO_1
+GOTO Belt_1_0_5deg
+GOTO Belt_2_0_5deg
+
+//reset camera date
+ WHILE TRUE DO
+ Vision_Enable(Vision1, FALSE)
+ CALL vision()
+ WaitJustInTime()
+ ReadyTake1.Set(FALSE)
+ ReadyTake2.Set(FALSE)
+ MoveX1 := 0
+ MoveY1 := 0
+ MoveC1 := 0
+ MoveID1 := 0
+ MoveX2 := 0
+ MoveY2 := 0
+ MoveC2 := 0
+ MoveID2 := 0
+ 
+ WaitTime(999999999)
+ END_WHILE
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LABEL Belt_1_TO_1
+//From Belt_1 TO Belt_1 ( + offset)
+WHILE TRUE DO
+
+LABEL  start
+WaitTime(0)
+number := 0
+count := 0
+
+LABEL rst_3
+waitobj := Vision_WaitObj(Vision1, 100)
+WHILE NOT ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0) AND (CamID.val =0) AND (waitobj = FALSE)) DO
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "Ready")
+ waitobj := Vision_WaitObj(Vision1, 2000)
+ IF waitobj = FALSE THEN
+    GOTO rst_3
+ END_IF
+ Vision_ReadData(Vision1)
+ WaitTime(150)
+ waitobj := Vision_WaitObj(Vision1, 100)
+END_WHILE
+
+ WaitTime(500)
+LABEL rst_1 
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "pos2")
+ waitobj := Vision_WaitObj(Vision1, 4000)
+ IF waitobj = FALSE THEN
+ IF count > 5 THEN
+    WAIT tm2000.q
+    Error("Communication error")
+GOTO start
+ END_IF
+ count := count + 1
+GOTO rst_1
+ END_IF
+ WaitTime(150)
+
+ Vision_ReadData(Vision1)
+ 
+ WaitTime(200)
+       IF ((ABS(CamX.val) >= 25) OR (ABS(CamY.val) >= 25) OR (ABS(CamA.val) >= 2) OR (CamID.val = 99))   OR   ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0) AND (CamID.val =0))   OR   ((CamX.val = MoveX1) AND (CamY.val = MoveY1) AND (CamA.val = MoveC1) AND (CamID.val =MoveID1))    OR   ((CamX.val = MoveX2) AND (CamY.val = MoveY2) AND (CamA.val = MoveC2) AND (CamID.val =MoveID2)) THEN
+    IF number >= 5 THEN
+    WAIT tm2000.q
+    Error("out limit")
+       GOTO start
+    END_IF
+    WaitTime(100)
+    number := number + 1
+    GOTO rst_1
+ ELSE
+  MoveX1 := CamX.val
+  MoveY1 := CamY.val
+  MoveC1 := CamA.val
+  MoveID1 := CamID.val
+  WaitIsFinished()
+  ReadyTake1.Set(TRUE)
+  END_IF
+  
+  
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+PTP(ap_home, ad80, or100)
+
+  //
+  //take___belt1
+WHILE (ABS(MoveX1) =0) AND (ABS(MoveY1) =0) AND (ABS(MoveC1) =0) DO
+   Error(" date = 0! ")
+END_WHILE
+
+PTP(ap_ready_1p, , or100)
+
+cpTakeWeld1P := TakeWeld_1P_base
+cpTakeWeld1P.x := TakeWeld_1P_base.x + MoveX1
+cpTakeWeld1P.y := TakeWeld_1P_base.y + MoveY1
+cpTakeWeld1P.c := TakeWeld_1P_base.c - MoveC1
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld1P, , or100)
+RefSys(refTOP)
+Lin(cpTakeWeld1P, , or100)
+LABEL xizhenkong
+RefSys(World)
+Lin(cpTakeWeld1P, velPut)
+
+WaitIsFinished()
+qCapAbsorb.Set(TRUE)
+iCapVacu.Wait(TRUE, 3000)
+IF NOT iCapVacu.val THEN
+   WaitIsFinished()
+   qCapAbsorb.Set(FALSE)
+   WaitTime(500)
+   RefSys(refTOP)
+   Lin(cpTakeWeld1P, velPut)
+   RefSys(World)
+   Error("Vacuum abnormally 1, manual movement, reset start")
+   GOTO xizhenkong
+END_IF
+
+RefSys(refTOP)
+Lin(cpTakeWeld1P, velPut, or100)
+ 
+WHILE NOT iCapVacu.val DO
+   Error("xi zheng kong yi chang")
+END_WHILE
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld1P, , or100)
+//RefSys(World)
+//Lin(ap_ready_1p, , or100)
+
+MoveX1 := 0
+MoveY1 := 0
+MoveC1 := 0
+MoveID1 := 0
+WaitJustInTime()
+ReadyTake1.Set(FALSE)
+
+  //
+  //place___belt1
+//RefSys(World)
+//PTP(ap_ready_1p, , or100)
+RefSys(refTOPUP)
+Lin(TakeWeld_1P_base, , or100)
+RefSys(refTOP)
+Lin(TakeWeld_1P_base, , or100)
+RefSys(World)
+Lin(TakeWeld_1P_base, velPut)
+
+ WaitIsFinished()
+ qCapAbsorb.Set(FALSE)
+ WaitTime(800)
+ qCapBlow.Pulse(TRUE, 1000)
+
+RefSys(refTOP)
+Lin(TakeWeld_1P_base, velPut, or100)
+RefSys(refTOPUP)
+Lin(TakeWeld_1P_base, , or100)
+RefSys(World)
+Lin(ap_ready_1p, , or100)
+
+PTP(ap_home, ad80)
+
+
+WaitTime(999999999)
+END_WHILE
+
+
+
+
+
+
+
+
+LABEL Belt_2_TO_2
+//From Belt_2 TO Belt_2 ( + offset)
+WHILE TRUE DO
+
+LABEL  start1
+WaitTime(0)
+number := 0
+count := 0
+
+LABEL rst_31
+waitobj := Vision_WaitObj(Vision1, 100)
+WHILE NOT ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0) AND (CamID.val =0) AND (waitobj = FALSE)) DO
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "Ready")
+ waitobj := Vision_WaitObj(Vision1, 2000)
+ IF waitobj = FALSE THEN
+    GOTO rst_31
+ END_IF
+ Vision_ReadData(Vision1)
+ WaitTime(150)
+ waitobj := Vision_WaitObj(Vision1, 100)
+END_WHILE
+
+ WaitTime(500)
+LABEL rst_11 
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "pos1")
+ waitobj := Vision_WaitObj(Vision1, 4000)
+ IF waitobj = FALSE THEN
+ IF count > 5 THEN
+    WAIT tm2000.q
+    Error("Communication error")
+GOTO start1
+ END_IF
+ count := count + 1
+GOTO rst_11
+ END_IF
+ WaitTime(150)
+
+ Vision_ReadData(Vision1)
+ 
+ WaitTime(200)
+       IF ((ABS(CamX.val) >= 25) OR (ABS(CamY.val) >= 25) OR (ABS(CamA.val) >= 2) OR (CamID.val = 99))   OR   ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0) AND (CamID.val =0))   OR   ((CamX.val = MoveX1) AND (CamY.val = MoveY1) AND (CamA.val = MoveC1) AND (CamID.val =MoveID1))    OR   ((CamX.val = MoveX2) AND (CamY.val = MoveY2) AND (CamA.val = MoveC2) AND (CamID.val =MoveID2)) THEN
+    IF number >= 5 THEN
+    WAIT tm2000.q
+    Error("out limit")
+       GOTO start1
+    END_IF
+    WaitTime(100)
+    number := number + 1
+    GOTO rst_11
+ ELSE
+  MoveX2 := CamX.val
+  MoveY2 := CamY.val
+  MoveC2 := CamA.val
+  MoveID2 := CamID.val
+  WaitIsFinished()
+  ReadyTake2.Set(TRUE)
+  END_IF
+  
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+PTP(ap_home, ad80, or100)
+
+  //
+  //take___belt2
+WHILE (ABS(MoveX2) =0) AND (ABS(MoveY2) =0) AND (ABS(MoveC2) =0) DO
+   Error(" date = 0! ")
+END_WHILE
+
+PTP(ap_ready_2p, , or100)
+
+cpTakeWeld2P := TakeWeld_2P_base
+cpTakeWeld2P.x := TakeWeld_2P_base.x + MoveX2
+cpTakeWeld2P.y := TakeWeld_2P_base.y + MoveY2
+cpTakeWeld2P.c := TakeWeld_2P_base.c - MoveC2
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld2P, , or100)
+RefSys(refTOP)
+Lin(cpTakeWeld2P, , or100)
+LABEL xizhenkong1
+RefSys(World)
+Lin(cpTakeWeld2P, velPut)
+
+WaitIsFinished()
+qCapAbsorb.Set(TRUE)
+iCapVacu.Wait(TRUE, 3000)
+IF NOT iCapVacu.val THEN
+   WaitIsFinished()
+   qCapAbsorb.Set(FALSE)
+   WaitTime(500)
+   RefSys(refTOP)
+   Lin(cpTakeWeld2P, velPut)
+   RefSys(World)
+   Error("Vacuum abnormally 1, manual movement, reset start")
+   GOTO xizhenkong1
+END_IF
+
+RefSys(refTOP)
+Lin(cpTakeWeld2P, velPut, or100)
+ 
+WHILE NOT iCapVacu.val DO
+   Error("xi zheng kong yi chang")
+END_WHILE
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld2P, , or100)
+//RefSys(World)
+//Lin(ap_ready_2p, , or100)
+
+MoveX2 := 0
+MoveY2 := 0
+MoveC2 := 0
+MoveID2 := 0
+WaitJustInTime()
+ReadyTake2.Set(FALSE)
+
+  //
+  //place___belt2
+//RefSys(World)
+//PTP(ap_ready_2p, , or100)
+RefSys(refTOPUP)
+Lin(TakeWeld_2P_base, , or100)
+RefSys(refTOP)
+Lin(TakeWeld_2P_base, , or100)
+RefSys(World)
+Lin(TakeWeld_2P_base, velPut)
+
+ WaitIsFinished()
+ qCapAbsorb.Set(FALSE)
+ WaitTime(800)
+ qCapBlow.Pulse(TRUE, 1000)
+
+RefSys(refTOP)
+Lin(TakeWeld_2P_base, velPut, or100)
+RefSys(refTOPUP)
+Lin(TakeWeld_2P_base, , or100)
+RefSys(World)
+Lin(ap_ready_2p, , or100)
+
+PTP(ap_home, ad80)
+
+ WaitTime(999999999)
+END_WHILE
+
+
+
+
+
+
+
+
+
+
+LABEL Belt_1_TO_2
+//From Belt_1 TO Belt_2 ( + offset)
+WHILE TRUE DO
+
+LABEL  start2
+WaitTime(0)
+number := 0
+count := 0
+
+LABEL rst_32
+waitobj := Vision_WaitObj(Vision1, 100)
+WHILE NOT ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0) AND (CamID.val =0) AND (waitobj = FALSE)) DO
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "Ready")
+ waitobj := Vision_WaitObj(Vision1, 2000)
+ IF waitobj = FALSE THEN
+    GOTO rst_32
+ END_IF
+ Vision_ReadData(Vision1)
+ WaitTime(150)
+ waitobj := Vision_WaitObj(Vision1, 100)
+END_WHILE
+
+ WaitTime(500)
+LABEL rst_12 
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "pos2")
+ waitobj := Vision_WaitObj(Vision1, 4000)
+ IF waitobj = FALSE THEN
+ IF count > 5 THEN
+    WAIT tm2000.q
+    Error("Communication error")
+GOTO start2
+ END_IF
+ count := count + 1
+GOTO rst_12
+ END_IF
+ WaitTime(150)
+
+ Vision_ReadData(Vision1)
+ 
+ WaitTime(200)
+       IF ((ABS(CamX.val) >= 25) OR (ABS(CamY.val) >= 25) OR (ABS(CamA.val) >= 2) OR (CamID.val = 99))   OR   ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0) AND (CamID.val =0))   OR   ((CamX.val = MoveX1) AND (CamY.val = MoveY1) AND (CamA.val = MoveC1) AND (CamID.val =MoveID1))    OR   ((CamX.val = MoveX2) AND (CamY.val = MoveY2) AND (CamA.val = MoveC2) AND (CamID.val =MoveID2)) THEN
+    IF number >= 5 THEN
+    WAIT tm2000.q
+    Error("out limit")
+       GOTO start2
+    END_IF
+    WaitTime(100)
+    number := number + 1
+    GOTO rst_12
+ ELSE
+  MoveX1 := CamX.val
+  MoveY1 := CamY.val
+  MoveC1 := CamA.val
+  MoveID1 := CamID.val
+  WaitIsFinished()
+  ReadyTake1.Set(TRUE)
+  END_IF
+  
+  
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+PTP(ap_home, ad80, or100)
+
+  //
+  //take___belt1
+WHILE (ABS(MoveX1) =0) AND (ABS(MoveY1) =0) AND (ABS(MoveC1) =0) DO
+   Error(" date = 0! ")
+END_WHILE
+
+PTP(ap_ready_1p, , or100)
+
+cpTakeWeld1P := TakeWeld_1P_base
+cpTakeWeld1P.x := TakeWeld_1P_base.x + MoveX1
+cpTakeWeld1P.y := TakeWeld_1P_base.y + MoveY1
+cpTakeWeld1P.c := TakeWeld_1P_base.c - MoveC1
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld1P, , or100)
+RefSys(refTOP)
+Lin(cpTakeWeld1P, , or100)
+LABEL xizhenkong2
+RefSys(World)
+Lin(cpTakeWeld1P, velPut)
+
+WaitIsFinished()
+qCapAbsorb.Set(TRUE)
+iCapVacu.Wait(TRUE, 3000)
+IF NOT iCapVacu.val THEN
+   WaitIsFinished()
+   qCapAbsorb.Set(FALSE)
+   WaitTime(500)
+   RefSys(refTOP)
+   Lin(cpTakeWeld1P, velPut)
+   RefSys(World)
+   Error("Vacuum abnormally 1, manual movement, reset start")
+   GOTO xizhenkong2
+END_IF
+
+RefSys(refTOP)
+Lin(cpTakeWeld1P, velPut, or100)
+ 
+WHILE NOT iCapVacu.val DO
+   Error("xi zheng kong yi chang")
+END_WHILE
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld1P, , or100)
+RefSys(World)
+Lin(ap_ready_1p, , or100)
+
+MoveX1 := 0
+MoveY1 := 0
+MoveC1 := 0
+MoveID1 := 0
+WaitJustInTime()
+ReadyTake1.Set(FALSE)
+PTP(ap_home, ad80)
+  //
+  //place___belt2
+RefSys(World)
+PTP(ap_ready_2p, , or100)
+RefSys(refTOPUP)
+Lin(TakeWeld_2P_base, , or100)
+RefSys(refTOP)
+Lin(TakeWeld_2P_base, , or100)
+RefSys(World)
+Lin(TakeWeld_2P_base, velPut)
+
+ WaitIsFinished()
+ qCapAbsorb.Set(FALSE)
+ WaitTime(800)
+ qCapBlow.Pulse(TRUE, 1000)
+
+RefSys(refTOP)
+Lin(TakeWeld_2P_base, velPut, or100)
+RefSys(refTOPUP)
+Lin(TakeWeld_2P_base, , or100)
+RefSys(World)
+Lin(ap_ready_2p, , or100)
+
+PTP(ap_home, ad80)
+
+ WaitTime(999999999)
+END_WHILE
+
+
+
+
+
+
+
+
+LABEL Belt_2_TO_1
+//From Belt_2 TO Belt_1 ( + offset)
+WHILE TRUE DO
+
+LABEL  start3
+WaitTime(0)
+number := 0
+count := 0
+
+LABEL rst_33
+waitobj := Vision_WaitObj(Vision1, 100)
+WHILE NOT ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0) AND (CamID.val =0) AND (waitobj = FALSE)) DO
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "Ready")
+ waitobj := Vision_WaitObj(Vision1, 2000)
+ IF waitobj = FALSE THEN
+    GOTO rst_33
+ END_IF
+ Vision_ReadData(Vision1)
+ WaitTime(150)
+ waitobj := Vision_WaitObj(Vision1, 100)
+END_WHILE
+
+ WaitTime(500)
+LABEL rst_13 
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "pos1")
+ waitobj := Vision_WaitObj(Vision1, 4000)
+ IF waitobj = FALSE THEN
+ IF count > 5 THEN
+    WAIT tm2000.q
+    Error("Communication error")
+GOTO start3
+ END_IF
+ count := count + 1
+GOTO rst_13
+ END_IF
+ WaitTime(150)
+
+ Vision_ReadData(Vision1)
+ 
+ WaitTime(200)
+       IF ((ABS(CamX.val) >= 25) OR (ABS(CamY.val) >= 25) OR (ABS(CamA.val) >= 2) OR (CamID.val = 99))   OR   ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0) AND (CamID.val =0))   OR   ((CamX.val = MoveX1) AND (CamY.val = MoveY1) AND (CamA.val = MoveC1) AND (CamID.val =MoveID1))    OR   ((CamX.val = MoveX2) AND (CamY.val = MoveY2) AND (CamA.val = MoveC2) AND (CamID.val =MoveID2)) THEN
+    IF number >= 5 THEN
+    WAIT tm2000.q
+    Error("out limit")
+       GOTO start3
+    END_IF
+    WaitTime(100)
+    number := number + 1
+    GOTO rst_13
+ ELSE
+  MoveX2 := CamX.val
+  MoveY2 := CamY.val
+  MoveC2 := CamA.val
+  MoveID2 := CamID.val
+  WaitIsFinished()
+  ReadyTake2.Set(TRUE)
+  END_IF
+  
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+PTP(ap_home, ad80, or100)
+
+  //
+  //take___belt2
+WHILE (ABS(MoveX2) =0) AND (ABS(MoveY2) =0) AND (ABS(MoveC2) =0) DO
+   Error(" date = 0! ")
+END_WHILE
+
+PTP(ap_ready_2p, , or100)
+
+cpTakeWeld2P := TakeWeld_2P_base
+cpTakeWeld2P.x := TakeWeld_2P_base.x + MoveX2
+cpTakeWeld2P.y := TakeWeld_2P_base.y + MoveY2
+cpTakeWeld2P.c := TakeWeld_2P_base.c - MoveC2
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld2P, , or100)
+RefSys(refTOP)
+Lin(cpTakeWeld2P, , or100)
+LABEL xizhenkong3
+RefSys(World)
+Lin(cpTakeWeld2P, velPut)
+
+WaitIsFinished()
+qCapAbsorb.Set(TRUE)
+iCapVacu.Wait(TRUE, 3000)
+IF NOT iCapVacu.val THEN
+   WaitIsFinished()
+   qCapAbsorb.Set(FALSE)
+   WaitTime(500)
+   RefSys(refTOP)
+   Lin(cpTakeWeld2P, velPut)
+   RefSys(World)
+   Error("Vacuum abnormally 1, manual movement, reset start")
+   GOTO xizhenkong3
+END_IF
+
+RefSys(refTOP)
+Lin(cpTakeWeld2P, velPut, or100)
+ 
+WHILE NOT iCapVacu.val DO
+   Error("xi zheng kong yi chang")
+END_WHILE
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld2P, , or100)
+RefSys(World)
+Lin(ap_ready_2p, , or100)
+
+MoveX2 := 0
+MoveY2 := 0
+MoveC2 := 0
+MoveID2 := 0
+WaitJustInTime()
+ReadyTake2.Set(FALSE)
+
+PTP(ap_home, ad80)
+  //
+  //place___belt1
+RefSys(World)
+PTP(ap_ready_1p, , or100)
+RefSys(refTOPUP)
+Lin(TakeWeld_1P_base, , or100)
+RefSys(refTOP)
+Lin(TakeWeld_1P_base, , or100)
+RefSys(World)
+Lin(TakeWeld_1P_base, velPut)
+
+ WaitIsFinished()
+ qCapAbsorb.Set(FALSE)
+ WaitTime(800)
+ qCapBlow.Pulse(TRUE, 1000)
+
+RefSys(refTOP)
+Lin(TakeWeld_1P_base, velPut, or100)
+RefSys(refTOPUP)
+Lin(TakeWeld_1P_base, , or100)
+RefSys(World)
+Lin(ap_ready_1p, , or100)
+
+PTP(ap_home, ad80)
+
+ WaitTime(999999999)
+END_WHILE
+
+
+
+
+
+
+
+LABEL Belt_1_0_5deg
+//Belt_1_Rotate it by an Angle
+WHILE TRUE DO
+  
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+PTP(ap_home, ad80, or100)
+
+  //
+  //take___belt1
+WHILE NOT (ABS(MoveX1) =0) AND (ABS(MoveY1) =0) AND (ABS(MoveC1) =0) DO
+   Error(" data <> 0! ")
+END_WHILE
+
+PTP(ap_ready_1p, , or100)
+
+cpTakeWeld1P := TakeWeld_1P_base
+cpTakeWeld1P.x := TakeWeld_1P_base.x
+cpTakeWeld1P.y := TakeWeld_1P_base.y
+cpTakeWeld1P.c := TakeWeld_1P_base.c
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld1P, , or100)
+RefSys(refTOP)
+Lin(cpTakeWeld1P, , or100)
+LABEL xizhenkong5
+RefSys(World)
+Lin(cpTakeWeld1P, velPut)
+
+WaitIsFinished()
+qCapAbsorb.Set(TRUE)
+iCapVacu.Wait(TRUE, 3000)
+IF NOT iCapVacu.val THEN
+   WaitIsFinished()
+   qCapAbsorb.Set(FALSE)
+   WaitTime(500)
+   RefSys(refTOP)
+   Lin(cpTakeWeld1P, velPut)
+   RefSys(World)
+   Error("Vacuum abnormally 1, manual movement, reset start")
+   GOTO xizhenkong5
+END_IF
+
+RefSys(refTOP)
+Lin(cpTakeWeld1P, velPut, or100)
+ 
+WHILE NOT iCapVacu.val DO
+   Error("xi zheng kong yi chang")
+END_WHILE
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld1P, , or100)
+RefSys(World)
+Lin(ap_ready_1p, , or100)
+
+  //
+  //place___belt1
+RefSys(World)
+PTP(ap_ready_1p)
+
+Error("Select the rotation Angle and comment out the unused ones , Below cpTakeWeld1P. c!")
+WaitTime(200)
+
+cpTakeWeld1P := TakeWeld_1P_base
+cpTakeWeld1P.x := TakeWeld_1P_base.x 
+cpTakeWeld1P.y := TakeWeld_1P_base.y 
+cpTakeWeld1P.c := TakeWeld_1P_base.c + 0.5
+//cpTakeWeld1P.c := TakeWeld_1P_base.c - 0.5  
+RefSys(refTOPUP)
+Lin(cpTakeWeld1P, , or100)
+RefSys(refTOP)
+Lin(cpTakeWeld1P, , or100)
+RefSys(World)
+Lin(cpTakeWeld1P, velPut)
+
+ WaitIsFinished()
+ qCapAbsorb.Set(FALSE)
+ WaitTime(800)
+ qCapBlow.Pulse(TRUE, 1000)
+
+RefSys(refTOP)
+Lin(cpTakeWeld1P, velPut, or100)
+RefSys(refTOPUP)
+Lin(cpTakeWeld1P, , or100)
+RefSys(World)
+Lin(ap_ready_1p, , or100)
+
+PTP(ap_home, ad80)
+
+
+ WaitTime(999999999)
+END_WHILE
+
+
+
+
+
+
+
+
+LABEL Belt_2_0_5deg
+//Belt_2_Rotate it by an Angle
+WHILE TRUE DO
+
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+PTP(ap_home, ad80, or100)
+
+  //
+  //take___belt2
+WHILE NOT(ABS(MoveX2) =0) AND (ABS(MoveY2) =0) AND (ABS(MoveC2) =0) DO
+   Error(" data <> 0! ")
+END_WHILE
+
+PTP(ap_ready_2p, , or100)
+
+cpTakeWeld2P := TakeWeld_2P_base
+cpTakeWeld2P.x := TakeWeld_2P_base.x 
+cpTakeWeld2P.y := TakeWeld_2P_base.y 
+cpTakeWeld2P.c := TakeWeld_2P_base.c
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld2P, , or100)
+RefSys(refTOP)
+Lin(cpTakeWeld2P, , or100)
+LABEL xizhenkong6
+RefSys(World)
+Lin(cpTakeWeld2P, velPut)
+
+WaitIsFinished()
+qCapAbsorb.Set(TRUE)
+iCapVacu.Wait(TRUE, 3000)
+IF NOT iCapVacu.val THEN
+   WaitIsFinished()
+   qCapAbsorb.Set(FALSE)
+   WaitTime(500)
+   RefSys(refTOP)
+   Lin(cpTakeWeld2P, velPut)
+   RefSys(World)
+   Error("Vacuum abnormally 1, manual movement, reset start")
+   GOTO xizhenkong6
+END_IF
+
+RefSys(refTOP)
+Lin(cpTakeWeld2P, velPut, or100)
+ 
+WHILE NOT iCapVacu.val DO
+   Error("xi zheng kong yi chang")
+END_WHILE
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld2P, , or100)
+RefSys(World)
+Lin(ap_ready_2p, , or100)
+
+  //
+  //place___belt2
+RefSys(World)
+PTP(ap_ready_2p, , or100)
+
+Error("Select the rotation Angle and comment out the unused ones , Below cpTakeWeld2P. c!")
+WaitTime(200)
+
+cpTakeWeld2P := TakeWeld_2P_base
+cpTakeWeld2P.x := TakeWeld_2P_base.x 
+cpTakeWeld2P.y := TakeWeld_2P_base.y 
+cpTakeWeld2P.c := TakeWeld_2P_base.c + 0.5
+//cpTakeWeld2P.c := TakeWeld_2P_base.c - 0.5
+
+RefSys(refTOPUP)
+Lin(cpTakeWeld2P, , or100)
+RefSys(refTOP)
+Lin(cpTakeWeld2P, , or100)
+RefSys(World)
+Lin(cpTakeWeld2P, velPut)
+
+ WaitIsFinished()
+ qCapAbsorb.Set(FALSE)
+ WaitTime(800)
+ qCapBlow.Pulse(TRUE, 1000)
+
+RefSys(refTOP)
+Lin(cpTakeWeld2P, velPut, or100)
+RefSys(refTOPUP)
+Lin(cpTakeWeld2P, , or100)
+RefSys(World)
+Lin(ap_ready_2p, , or100)
+
+PTP(ap_home, ad80)
+
+ WaitTime(999999999)
+END_WHILE

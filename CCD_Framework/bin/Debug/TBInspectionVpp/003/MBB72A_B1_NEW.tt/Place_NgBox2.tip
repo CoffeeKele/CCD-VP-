@@ -1,0 +1,42 @@
+// KAIROVersion 2.00
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+WHILE fangdai <> 104 DO
+ Error("Load error, restart!")
+END_WHILE
+fangdai := 0
+
+
+PTP(ap_home, ad80, or100)
+//PTP(turn2P, , or100)
+PTP(ap_ready_2p, , or100)
+
+belt2_Area.Activate()
+
+RefSys(refTOPUP)
+Lin(Place_2NgBox_base, , or100)
+RefSys(refTOP)
+Lin(Place_2NgBox_base, , or100)
+LABEL xizhenkong
+RefSys(World)
+Lin(Place_2NgBox_base, velPut)
+
+ WaitIsFinished()
+ qCapAbsorb.Set(FALSE)
+ WaitTime(1000)
+ qCapBlow.Pulse(TRUE, 1000)
+
+RefSys(refTOP)
+Lin(Place_2NgBox_base, velPut, or100)
+RefSys(refTOPUP)
+Lin(Place_2NgBox_base, , or100)
+RefSys(World)
+Lin(ap_ready_2p, , or100)
+
+belt2_Area.Deactivate()
+//PTP(turn2P, ad80 , or100)
+PTP(ap_home, ad80)
+

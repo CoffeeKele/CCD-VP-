@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AllStdData>
+  <ProdStdData Guid="f8aec350-fb63-4634-8296-74e163b57aa8" Date="2018-07-11 10:54:04">
+    <Code>001</Code>
+    <Name>3U半片(12片)</Name>
+    <sMidPoint>188.49,-1535.345</sMidPoint>
+    <Angle>0.228</Angle>
+    <StDx>7.194791</StDx>
+    <StDy>3.718925</StDy>
+    <XOffsetAllowed>50</XOffsetAllowed>
+    <YOffsetAllowed>50</YOffsetAllowed>
+    <AngleOffsetAllowed>6</AngleOffsetAllowed>
+  </ProdStdData>
+  <ProdStdData Guid="f5486696-18db-424b-9322-9afe3666e1a6" Date="2018-07-11 10:54:53">
+    <Code>002</Code>
+    <Name>3K半片(10片)</Name>
+    <sMidPoint>0,0</sMidPoint>
+    <Angle>0.15</Angle>
+    <StDx>0</StDx>
+    <StDy>0</StDy>
+    <XOffsetAllowed>100</XOffsetAllowed>
+    <YOffsetAllowed>100</YOffsetAllowed>
+    <AngleOffsetAllowed>0.01</AngleOffsetAllowed>
+  </ProdStdData>
+  <ProdStdData Guid="537ab3ab-7ab9-43c9-8155-1442901254fc" Date="2018-07-11 10:56:49">
+    <Code>003</Code>
+    <Name>166(12片)</Name>
+    <sMidPoint>110,110</sMidPoint>
+    <Angle>0.18</Angle>
+    <StDx>0</StDx>
+    <StDy>0</StDy>
+    <XOffsetAllowed>100</XOffsetAllowed>
+    <YOffsetAllowed>100</YOffsetAllowed>
+    <AngleOffsetAllowed>0.01</AngleOffsetAllowed>
+  </ProdStdData>
+  <ProdStdData Guid="2f16ab55-63d3-4d25-9ade-94fc3d05a4f8" Date="2018-07-11 10:57:34">
+    <Code>004</Code>
+    <Name>166(10片)</Name>
+    <sMidPoint>0,0</sMidPoint>
+    <Angle>0</Angle>
+    <XOffsetAllowed>100</XOffsetAllowed>
+    <YOffsetAllowed>100</YOffsetAllowed>
+    <AngleOffsetAllowed>100</AngleOffsetAllowed>
+  </ProdStdData>
+  <ProdStdData Guid="2ce0f352-a2f3-4985-a5bf-954da8bd624e" Date="2018-07-11 10:58:19">
+    <Code>005</Code>
+    <Name>双面AB串(12片)</Name>
+    <sMidPoint>0,0</sMidPoint>
+    <Angle>0</Angle>
+    <XOffsetAllowed>0</XOffsetAllowed>
+    <YOffsetAllowed>0</YOffsetAllowed>
+    <AngleOffsetAllowed>0</AngleOffsetAllowed>
+  </ProdStdData>
+  <ProdStdData Guid="a7ffc977-26f9-4f71-8cb1-e638552ebae9" Date="2018-07-13 10:14:26">
+    <Code>006</Code>
+    <Name>双面AB串(10片)</Name>
+    <sMidPoint>0,0</sMidPoint>
+    <Angle>0</Angle>
+    <StDx>0</StDx>
+    <StDy>0</StDy>
+    <XOffsetAllowed>0</XOffsetAllowed>
+    <YOffsetAllowed>0</YOffsetAllowed>
+    <AngleOffsetAllowed>0</AngleOffsetAllowed>
+  </ProdStdData>
+  <ProdStdData Guid="b2db892a-2d78-4678-a46d-7778dfe5f823" Date="2018-07-13 10:28:32">
+    <Code>007</Code>
+    <Name>AB串测试</Name>
+    <sMidPoint>188.49,-1535.345</sMidPoint>
+    <Angle>0.228</Angle>
+    <XOffsetAllowed>50</XOffsetAllowed>
+    <YOffsetAllowed>50</YOffsetAllowed>
+    <AngleOffsetAllowed>6</AngleOffsetAllowed>
+  </ProdStdData>
+</AllStdData>

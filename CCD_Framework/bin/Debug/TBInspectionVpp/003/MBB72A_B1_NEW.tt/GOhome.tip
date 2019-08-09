@@ -1,0 +1,69 @@
+// KAIROVersion 2.00
+belt2_Area.Deactivate()
+belt1_Area.Deactivate()
+place_Area.Deactivate()
+RefSys(World)
+ReadOverride(curOverride)
+WaitIsFinished()
+GlobalOverride(10)
+
+CurrentPos(pianyi)
+WaitIsFinished()
+
+IF (pianyi.z < 0) THEN
+   pianyi.z := 50
+   Lin(pianyi)
+END_IF
+
+IF (pianyi.y < -900) OR (pianyi.y > 900) THEN
+
+   pianyi.z := 290
+   Lin(pianyi)
+   
+   IF (pianyi.y > 900) THEN
+    pianyi.y := 900
+    Lin(pianyi)
+   ELSIF (pianyi.y < -900) THEN
+    pianyi.y := -900
+    Lin(pianyi)
+   ELSE
+    Error("Program load error!")
+   END_IF
+   
+   pianyi.z := 312
+   Lin(pianyi)  
+   pianyi.x := 1408
+   Lin(pianyi)
+   pianyi.y := 0
+   Lin(pianyi)
+   
+ELSIF (pianyi.y > -700) OR (pianyi.y < 700) THEN
+   pianyi.x := 1408
+      Lin(pianyi)
+      pianyi.z := 312
+      Lin(pianyi) 
+      pianyi.y := 0
+   Lin(pianyi)   
+   
+ELSE
+ WHILE TRUE DO
+ Error("You have to move it manually and reload!")
+ END_WHILE
+END_IF
+PTP(ap_home)
+
+WaitIsFinished()
+GlobalOverride(curOverride)
+IF iCapVacu.val THEN
+IF PLC_word.val = 1 THEN
+   fangdai := 101
+   CALL place_1P()
+ELSIF PLC_word.val = 2 THEN
+   fangdai := 102
+   CALL place_2P()
+ELSE
+   Error("I not know belt")
+   fangdai := 101
+   CALL place_1P()
+END_IF
+END_IF

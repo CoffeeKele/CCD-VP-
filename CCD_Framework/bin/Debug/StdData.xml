@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AllStdData>
+  <ProdStdData Guid="26562740-257d-4dbd-8c84-814a99223f30" Date="2019-04-05 09:32:53">
+    <Code>002</Code>
+    <Name>MBB60(整片)</Name>
+    <sMidPoint>4.634,1688.653</sMidPoint>
+    <Angle>-0.147</Angle>
+    <StDx>-1.941044</StDx>
+    <StDy>-1.612772</StDy>
+    <sMidPoint2>-22.886,-1736.941</sMidPoint2>
+    <Angle2>-0.99</Angle2>
+    <StDx2>-23.6968</StDx2>
+    <StDy2>-5.489269</StDy2>
+    <XOffsetAllowed>50</XOffsetAllowed>
+    <YOffsetAllowed>50</YOffsetAllowed>
+    <CellLength1>1638</CellLength1>
+    <CellLength1Limits>5</CellLength1Limits>
+    <CellLength2>1638</CellLength2>
+    <CellLength2Limits>5</CellLength2Limits>
+    <WidthA1>161</WidthA1>
+    <WidthA1Limits>3</WidthA1Limits>
+    <WidthB1>161</WidthB1>
+    <WidthB1Limits>3</WidthB1Limits>
+    <WidthA2>161</WidthA2>
+    <WidthA2Limits>3</WidthA2Limits>
+    <WidthB2>161</WidthB2>
+    <WidthB2Limits>3</WidthB2Limits>
+    <Note>A(45)     
+B(125)          
+C(59)       
+D(194)                                          </Note>
+    <AngleOffsetAllowed>1</AngleOffsetAllowed>
+  </ProdStdData>
+  <ProdStdData Guid="de298ac5-de5c-4be4-8156-462dade76ac6" Date="2019-06-11 14:45:44">
+    <Code>003</Code>
+    <Name>mbb72(整片)</Name>
+    <sMidPoint>4.59,1688.837</sMidPoint>
+    <Angle>-0.159</Angle>
+    <StDx>-3.882588</StDx>
+    <StDy>-3.110952</StDy>
+    <sMidPoint2>-43.918,-1686.182</sMidPoint2>
+    <Angle2>0.024</Angle2>
+    <StDx2>-5.171056</StDx2>
+    <StDy2>2.342153</StDy2>
+    <XOffsetAllowed>50</XOffsetAllowed>
+    <YOffsetAllowed>50</YOffsetAllowed>
+    <CellLength1>1967.9</CellLength1>
+    <CellLength1Limits>5</CellLength1Limits>
+    <CellLength2>1967.9</CellLength2>
+    <CellLength2Limits>5</CellLength2Limits>
+    <WidthA1>161.7</WidthA1>
+    <WidthA1Limits>3</WidthA1Limits>
+    <WidthB1>161.7</WidthB1>
+    <WidthB1Limits>3</WidthB1Limits>
+    <WidthA2>161.7</WidthA2>
+    <WidthA2Limits>3</WidthA2Limits>
+    <WidthB2>161.7</WidthB2>
+    <WidthB2Limits>3</WidthB2Limits>
+    <Note>
+A(32)           
+B(136)
+          C(48)
+           D(205)
+</Note>
+    <AngleOffsetAllowed>1.5</AngleOffsetAllowed>
+  </ProdStdData>
+</AllStdData>

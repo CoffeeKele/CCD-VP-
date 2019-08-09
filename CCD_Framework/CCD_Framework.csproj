@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9D57DAB-C695-4CA1-A61B-200486E60B88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CCD_Framework</RootNamespace>
+    <AssemblyName>CCD_Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Camera.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cognex.VisionPro, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.Controls, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.Core, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.Display.Controls, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.ImageFile, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.ImageProcessing, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.ToolGroup, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.ToolGroup.Controls, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ImageSave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageSave.Designer.cs">
+      <DependentUpon>ImageSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MyDisPlayUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MyDisPlayUI.Designer.cs">
+      <DependentUpon>MyDisPlayUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PhotoModeUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PhotoModeUI.Designer.cs">
+      <DependentUpon>PhotoModeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SettingOneUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SettingOneUI.Designer.cs">
+      <DependentUpon>SettingOneUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UploadModeUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UploadModeUI.Designer.cs">
+      <DependentUpon>UploadModeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\EN_US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EN_US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcqFifo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcqFifo.Designer.cs">
+      <DependentUpon>frmAcqFifo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseTB.Designer.cs">
+      <DependentUpon>frmBaseTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalculate.Designer.cs">
+      <DependentUpon>frmCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCurrTB.Designer.cs">
+      <DependentUpon>frmCurrTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImageSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImageSave.Designer.cs">
+      <DependentUpon>frmImageSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuickBuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuickBuild.Designer.cs">
+      <DependentUpon>frmQuickBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStartBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStartBar.Designer.cs">
+      <DependentUpon>frmStartBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStdData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStdData.Designer.cs">
+      <DependentUpon>frmStdData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSwitchTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSwitchTB.Designer.cs">
+      <DependentUpon>frmSwitchTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSysSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSysSetting.Designer.cs">
+      <DependentUpon>frmSysSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTBadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTBadd.Designer.cs">
+      <DependentUpon>frmTBadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\AppLock.cs" />
+    <Compile Include="Helper\ImageSaveHerper.cs" />
+    <Compile Include="Helper\iniHelper.cs" />
+    <Compile Include="Helper\LanguageHelper.cs" />
+    <Compile Include="Helper\LogHelper.cs" />
+    <Compile Include="Helper\TCPHelper.cs" />
+    <Compile Include="Helper\XmlHelper.cs" />
+    <Compile Include="Models\EnumHelper.cs" />
+    <Compile Include="Models\Line.cs" />
+    <Compile Include="Models\Point.cs" />
+    <Compile Include="Models\ProdStdData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ZH_CN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZH_CN.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\ImageSave.resx">
+      <DependentUpon>ImageSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MyDisPlayUI.resx">
+      <DependentUpon>MyDisPlayUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PhotoModeUI.resx">
+      <DependentUpon>PhotoModeUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SettingOneUI.resx">
+      <DependentUpon>SettingOneUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UploadModeUI.resx">
+      <DependentUpon>UploadModeUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\EN_US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EN_US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcqFifo.resx">
+      <DependentUpon>frmAcqFifo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseTB.resx">
+      <DependentUpon>frmBaseTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalculate.resx">
+      <DependentUpon>frmCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCurrTB.resx">
+      <DependentUpon>frmCurrTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImageSave.resx">
+      <DependentUpon>frmImageSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickBuild.resx">
+      <DependentUpon>frmQuickBuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStartBar.resx">
+      <DependentUpon>frmStartBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStdData.resx">
+      <DependentUpon>frmStdData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSwitchTB.resx">
+      <DependentUpon>frmSwitchTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSysSetting.resx">
+      <DependentUpon>frmSysSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTBadd.resx">
+      <DependentUpon>frmTBadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\ZH_CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ZH_CN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Camera.ico" />
+    <None Include="Resources\Arrow_Up_16px_1180684_easyicon.net.png" />
+    <None Include="Resources\Arrow_Down_16px_1180681_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

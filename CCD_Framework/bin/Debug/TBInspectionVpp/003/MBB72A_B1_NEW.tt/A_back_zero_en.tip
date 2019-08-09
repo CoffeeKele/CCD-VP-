@@ -1,0 +1,30 @@
+// KAIROVersion 2.00
+//A, the program is used to move the robot so that the motor angle is zero.
+//B. When using this program, make sure the robot is in manual mode and there is no vacuum.
+//C, the program runs manually (5% speed)
+//D. When you run the program and see the track exception, stop and close the program //directly, adjust the posture and run the program again.
+
+RefSys(World)
+WaitIsFinished()
+WHILE TRUE DO
+   Error("Please read the operation manual carefully")
+END_WHILE
+
+
+CALL inital()
+CALL GOhome()
+
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+   PTP(ap_home)
+   PTP(ap_home_p)
+   //Transition point
+   PTP(ap_transit)
+   //zero_point
+   PTP(ap_zero)
+   WaitTime(999999999)
+   PTP(ap_transit)
+   PTP(ap_home_p)
+   PTP(ap_home)

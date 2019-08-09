@@ -1,0 +1,7 @@
+TIME1 : DINT := 0
+TIME2 : DINT := 0
+TIME3 : DINT := 0
+TIME4 : DINT := 0
+TIME5 : DINT := 0
+TIME6 : DINT := 0
+

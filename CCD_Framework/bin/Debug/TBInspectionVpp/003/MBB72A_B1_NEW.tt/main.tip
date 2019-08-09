@@ -1,0 +1,82 @@
+// KAIROVersion 2.00
+Vision_Enable(Vision1, FALSE)
+KILL Com
+RefSys(World)
+CALL GOhome()
+CALL inital()
+CALL vision()
+
+RUN Com
+LABEL work
+
+WHILE (iiExistMain.val >= 0) AND (iiExistMain.val <= 6) DO
+ReadOverride(curOverride_2)
+WaitIsFinished()
+IF curOverride_2 > 95 THEN
+   GlobalOverride(90)
+END_IF
+
+   tm2000.Stop()
+   tm2000.q := FALSE
+   tm2000.Start(2000)
+   WAIT ReadyTake1.val OR ReadyTake2.val OR tm2000.q
+   tm2000.Stop()   
+   
+   IF ReadyTake1.val THEN
+      //WAIT iGlass.val
+   clkCycle.Start()
+CALL takeWeld1P()
+CALL place_1P()
+
+  clkCycle.Stop()
+  IF iiExistMain.val = 02 THEN
+  TIME1 := clkCycle.Read()
+  ELSIF iiExistMain.val = 03 THEN
+  TIME2 := clkCycle.Read()
+  ELSIF iiExistMain.val = 04 THEN
+  TIME3 := clkCycle.Read()
+  ELSIF iiExistMain.val = 05 THEN
+  TIME4 := clkCycle.Read()
+  ELSIF iiExistMain.val = 06 THEN
+  TIME5 := clkCycle.Read()
+  ELSIF iiExistMain.val = 00 THEN
+  TIME6 := clkCycle.Read()
+  END_IF
+  clkCycle.Reset()
+  
+  END_IF
+   
+   IF ReadyTake2.val  THEN
+   //WAIT iGlass.val
+   clkCycle.Start()
+CALL takeWeld2P()
+CALL place_2P()
+
+ clkCycle.Stop()
+ IF iiExistMain.val = 02 THEN
+ TIME1 := clkCycle.Read()
+ ELSIF iiExistMain.val = 03 THEN
+ TIME2 := clkCycle.Read()
+ ELSIF iiExistMain.val = 04 THEN
+ TIME3 := clkCycle.Read()
+ ELSIF iiExistMain.val = 05 THEN
+ TIME4 := clkCycle.Read()
+ ELSIF iiExistMain.val = 06 THEN
+ TIME5 := clkCycle.Read()
+ ELSIF iiExistMain.val = 00 THEN
+ TIME6 := clkCycle.Read()
+ END_IF
+ clkCycle.Reset()
+ 
+   END_IF
+   
+   IF tm2000.q  THEN
+      WaitTime(300)
+   END_IF
+
+END_WHILE
+WaitTime(50)
+
+GOTO work
+KILL Com
+

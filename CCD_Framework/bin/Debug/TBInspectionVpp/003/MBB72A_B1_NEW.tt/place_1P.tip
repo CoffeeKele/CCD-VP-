@@ -1,0 +1,174 @@
+// KAIROVersion 2.00
+ RefSys(World)
+ WaitIsFinished()
+ WHILE NOT HomePosArea.isInside DO
+ Error("Outside of start area!")
+ END_WHILE
+ WHILE fangdai <> 101 DO
+ Error("Load error, restart!")
+ END_WHILE
+ fangdai := 0
+ WHILE NOT iCapVacu.val DO
+ Error("Vacuum abnormities . Observe the vacuum table, and after judging the situation, it needs to be reloaded !")
+ END_WHILE
+ 
+IF (NG1_bit) THEN
+ IF (AA_NG1_count >= 15) OR (AA_NG1_count < 0) THEN
+   AA_NG1_count := 0
+   WHILE TRUE DO
+   Error("Ng1 box is full( count > 15),Manual cleaning!")
+   END_WHILE
+ ELSE 
+   fangdai := 103
+   CALL Place_NgBox1() 
+ END_IF
+   AA_NG1_count := AA_NG1_count + 01
+   NG1_bit:= FALSE
+   NG2_bit:= FALSE
+   RETURN
+END_IF
+ 
+ //RefSys(refBoard)
+ //Lin(basePOS_N[1])
+ //Lin(basePOS[1])
+ place_Area.Activate()
+ PTP(ap_home, adHome,or100) 
+ 
+IF (iiExistMain.val =1) OR (iiExistMain.val =3) OR (iiExistMain.val =5) OR (iiExistMain.val =0) OR (iiExistMain.val =7) THEN
+ PTP(ap_home_p,adHome,or100)
+clkCycle1.Start()
+ WAIT (iiExistMain.val >= 1) AND (iiExistMain.val <= 6) AND iGlass.val  
+clkCycle1.Stop()
+TIME1 := clkCycle1.Read()
+clkCycle1.Reset()
+  
+     basePOS[iiExistMain.val] := basePOS[1]
+     basePOS[iiExistMain.val].x := basePOS[1].x + (iiExistMain.val -1) * (rTrayLength + rTrayVertDist)
+  Target := basePOS[iiExistMain.val]
+  Target.x := basePOS[iiExistMain.val].x + Addx_1[iiExistMain.val] + addx_1 + All_addx + ADDX_Belt1_All .val + ADD_1X .val 
+  Target.y := basePOS[iiExistMain.val].y + Addy_1[iiExistMain.val] + addy_1 + All_addy + ADDY_Belt1_All .val + ADD_1Y .val 
+  Target.c := basePOS[iiExistMain.val].c + Addc_1[iiExistMain.val] + addc_1 + All_addc + ADDC_Belt1_All .val * 0.1 + ADD_1C .val * 0.1  
+  Target.z := basePOS[iiExistMain.val].z + Addz_1[iiExistMain.val] + addz_1 + All_addz + ADDZ_Belt1_All .val + ADD_1Z .val 
+  Target.a := basePOS[iiExistMain.val].a + Adda_1[iiExistMain.val]
+  Target.b := basePOS[iiExistMain.val].b + Addb_1[iiExistMain.val]
+ 
+ RefSys(refBoardup)
+ Lin(Target,  , or100)
+ RefSys(refBoard)
+ Lin(Target, vellift)
+ //WaitTime(999999999)
+ WaitIsFinished()
+ qCapAbsorb.Set(FALSE)
+ WaitTime(1000)
+ qCapBlow.Pulse(TRUE, 1000)
+
+ RefSys(refBoardup)
+ Lin(Target, vellift, or100)
+ 
+IF iiExistMain.val = 6 THEN
+WaitIsFinished()
+oiOrder.val:= 101
+WAIT iiStateUdt.val = 101
+oiOrder.val:= 0
+WAIT iiStateUdt.val = 0
+Count_ok:= TRUE
+END_IF 
+ 
+ RefSys(World)
+ PTP(ap_home_p, ad80, or100)
+
+ 
+ELSIF (iiExistMain.val =2) OR (iiExistMain.val =4) OR (iiExistMain.val =6) THEN
+ PTP(ap_home_n,adHome,or100)
+ WAIT (iiExistMain.val >= 1) AND (iiExistMain.val <= 6) AND iGlass.val 
+
+     basePOS_N[iiExistMain.val] := basePOS_N[1]
+     basePOS_N[iiExistMain.val].x := basePOS_N[1].x + (iiExistMain.val -1) * (rTrayLength + rTrayVertDist)
+  Target := basePOS_N[iiExistMain.val]
+  Target.x := basePOS_N[iiExistMain.val].x + Addx_1[iiExistMain.val] + addx_1 + All_addx + ADDX_Belt1_All .val + ADD_1X .val 
+  Target.y := basePOS_N[iiExistMain.val].y + Addy_1[iiExistMain.val] + addy_1 + All_addy + ADDY_Belt1_All .val + ADD_1Y .val 
+  Target.c := basePOS_N[iiExistMain.val].c + Addc_1[iiExistMain.val] + addc_1 + All_addc + ADDC_Belt1_All .val * 0.1 + ADD_1C .val * 0.1 
+  Target.z := basePOS_N[iiExistMain.val].z + Addz_1[iiExistMain.val] + addz_1 + All_addz + ADDZ_Belt1_All .val + ADD_1Z .val 
+  Target.a := basePOS_N[iiExistMain.val].a + Adda_1[iiExistMain.val]
+  Target.b := basePOS_N[iiExistMain.val].b + Addb_1[iiExistMain.val]
+    
+ RefSys(refBoardup)
+ Lin(Target, , or100)
+ RefSys(refBoard)
+ Lin(Target, vellift)
+ //WaitTime(999999999)
+ WaitIsFinished()
+ qCapAbsorb.Set(FALSE)
+ WaitTime(1000)
+ qCapBlow.Pulse(TRUE, 1000)
+
+ RefSys(refBoardup)
+ Lin(Target, vellift, or100)
+  
+IF iiExistMain.val = 6 THEN
+WaitIsFinished()
+oiOrder.val:= 101
+WAIT iiStateUdt.val = 101
+oiOrder.val:= 0
+WAIT iiStateUdt.val = 0
+Count_ok:= TRUE
+END_IF 
+
+ RefSys(World)
+ PTP(ap_home_n, ad80 ,or100)
+
+ELSE
+ WHILE TRUE DO
+ Error("ng")
+ END_WHILE 
+END_IF
+ 
+PTP(ap_home, adHome)
+place_Area.Deactivate()
+
+WaitIsFinished()
+IF iiExistMain.val = 5 THEN
+   TAKEUP5.Pulse(TRUE, 2000)
+END_IF
+
+
+num2 := 1
+LOOP NUM_plc.val - 1 DO
+    num2 := num2 * 10
+END_LOOP
+
+battrey_source[1]:= PLC_word.val * num2 + battrey_source[1]
+
+IF ( NUM_plc.val >= 6 ) THEN
+ num := 12
+ num1 := 11
+LOOP 11 DO
+    battrey_source[num] := battrey_source[num1]
+    num := num -1
+    num1 := num1 -1
+END_LOOP
+battrey_source[1]:= 0
+END_IF
+
+
+PLC_word.val := 0
+NUM_plc.val := 0
+
+IF NOT Count_ok THEN
+WaitIsFinished()
+oiOrder.val:= 101
+WAIT iiStateUdt.val = 101
+oiOrder.val:= 0
+WAIT iiStateUdt.val = 0
+ELSE
+Count_ok:= FALSE
+END_IF
+
+//WaitIsFinished()
+//IF (IoIIn[21] = 100) OR (IoIIn[21] = 200) THEN
+//   WaitTime(500)
+//   IoIOut[21] := 100
+//   WAIT IoIIn[20] = 50
+//END_IF
+//   IoIOut[21] := 0
+//   WAIT IoIIn[20] = 0

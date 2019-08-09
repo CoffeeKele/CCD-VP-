@@ -1,0 +1,100 @@
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.Controls.ImageSave.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.Controls.MyDisPlayUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.Controls.PhotoModeUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.Controls.SettingOneUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.Controls.UploadModeUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmAbout.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmAcqFifo.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmCalculate.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmImageSave.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmLogin.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmMain.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmQuickBuild.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmSetting.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmStartBar.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmStdData.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.frmSysSetting.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.Properties.Resources.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.csproj.GenerateResource.Cache
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\CCD_Framework.exe.config
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.ToolGroup.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.ToolGroup.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro3D.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.CorePlus.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.Interop.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\stdole.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.Inspection.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.Inspection.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.Database.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.Display.Controls.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.ImageFile.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.ImageProcessing.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro3D.Core.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.CorePlus.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.Inspection.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Release\Cognex.VisionPro.Database.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Release\CCD_Framework.csprojResolveAssemblyReference.cache
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.csprojResolveAssemblyReference.cache
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.Controls.ImageSave.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.Controls.MyDisPlayUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.Controls.PhotoModeUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.Controls.SettingOneUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.Controls.UploadModeUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmAbout.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmAcqFifo.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmCalculate.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmImageSave.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmLogin.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmMain.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmQuickBuild.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmSetting.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmStartBar.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmStdData.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.frmSysSetting.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.Properties.Resources.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.csproj.GenerateResource.Cache
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\CCD_Framework.exe.config
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Display.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.ImageFile.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.ImageProcessing.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.ToolGroup.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.ToolGroup.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro3D.Display.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.CorePlus.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro3D.Graphic.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro3D.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.FGGigE.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro3D.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Interop.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\stdole.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Inspection.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Inspection.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Database.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Core.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Display.Controls.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.ImageFile.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.ImageProcessing.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.ToolGroup.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro3D.Display.Controls.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.CorePlus.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro3D.Graphic.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro3D.Core.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.FGGigE.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro3D.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Inspection.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Release\Cognex.VisionPro.Database.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Release\CCD_Framework.pdb

@@ -1,0 +1,41 @@
+// KAIROVersion 2.00
+LABEL start
+Vision_Enable(Vision1, TRUE)
+Vision_SetIP(Vision1, "192.168.1.120", 3000)
+Vision_Connected(Vision1, 1000)
+
+LABEL rst_1
+WaitTime(200)
+Vision_SendData(Vision1, "Ready")
+waitobj := Vision_WaitObj(Vision1, 2000)
+IF waitobj = FALSE THEN
+   GOTO rst_1
+END_IF
+WaitTime(100)
+Vision_ReadData(Vision1)
+
+Ret_count := 0
+LABEL rst_2
+waitobj := Vision_WaitObj(Vision1, 80)
+
+WHILE NOT ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0) AND (CamID.val =0) AND (waitobj = FALSE)) DO
+  Ret_count := Ret_count + 1
+  IF Ret_count > 5 THEN
+	  Vision_Enable(Vision1, FALSE)
+	  Ang_photo_Reset := Ang_photo_Reset + 1
+	  GOTO start
+  END_IF
+  Vision_Connected(Vision1, 1000)
+  WaitTime(200)
+  Vision_SendData(Vision1, "Ready")
+  waitobj := Vision_WaitObj(Vision1, 2000)
+  IF waitobj = FALSE THEN
+	GOTO rst_2
+  END_IF
+ WaitTime(100)
+ Vision_ReadData(Vision1)
+ WaitTime(50)
+ waitobj := Vision_WaitObj(Vision1, 80)
+END_WHILE
+
+WaitTime(50)

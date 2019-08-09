@@ -1,0 +1,11 @@
+// KAIROVersion 2.00
+WHILE TRUE DO
+Error("You're ShengCheng ?")
+END_WHILE
+
+Lin(Left_POS)
+CALL z_Left_1()
+CALL z_Left_2()
+Lin(Right_POS)
+CALL z_Right_1()
+CALL z_Right_2()

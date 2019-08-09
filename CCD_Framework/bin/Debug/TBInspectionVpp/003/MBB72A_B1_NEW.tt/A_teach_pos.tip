@@ -1,0 +1,202 @@
+// KAIROVersion 2.00
+GOTO TakeBelt_1
+GOTO TakeBelt_2
+GOTO Place1
+
+
+//原点示教程序
+//有注释的部分上方就是要示教的点，分别是/ap_home/ap_home_n/ap_home_p/
+WHILE TRUE DO
+
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+   PTP(ap_home)
+   //原点teach
+   PTPRel(rotate_270)
+   PTP(ap_home_n)
+   //原点负90度teach
+   PTP(ap_home)
+   PTPRel(rotate_90)
+   PTP(ap_home_p)
+   //原点正90度teach
+   PTP(ap_home)
+   
+WaitTime(999999999)   
+END_WHILE
+
+
+
+
+
+
+LABEL TakeBelt_1
+//抓取皮带1，示教程序。
+//有注释的部分上方就是要示教的点，分别是/turn1P/ap_ready_1p/TakeWeld_1P_base/Place_1NgBox_base
+WHILE TRUE DO
+
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+PTP(ap_home)
+PTP(turn1P)
+//1P过渡点（原点往皮带1方向y轴动个50cm）
+PTP(ap_ready_1p)
+//1p准备点（A、确保在皮带1的安全区内   B、确保从上一个点移动过来不会碰撞  C、确保从上个点移动进来不会碰撞）
+
+belt1_Area.Activate()
+
+RefSys(refTOPUP)
+Lin(TakeWeld_1P_base)
+RefSys(refTOP)
+Lin(TakeWeld_1P_base)
+RefSys(World)
+Lin(TakeWeld_1P_base, velPut)
+//1p抓取点（A、确保在皮带1的安全区内   B、确保从上一个点移动过来不会碰撞    C、确保调好抓取点的水平并在world坐标下teach   D、该程序只是大概teach）
+RefSys(refTOP)
+Lin(TakeWeld_1P_base, velPut)
+RefSys(refTOPUP)
+Lin(TakeWeld_1P_base)
+RefSys(World)
+Lin(ap_ready_1p)
+RefSys(refTOPUP)
+Lin(Place_1NgBox_base)
+RefSys(refTOP)
+Lin(Place_1NgBox_base)
+RefSys(World)
+Lin(Place_1NgBox_base, velPut)
+//1ng盒的放置点（A、确保在皮带1的安全区内   B、确保从上一个点移动过来不会碰撞 ）
+RefSys(refTOP)
+Lin(Place_1NgBox_base, velPut)
+RefSys(refTOPUP)
+Lin(Place_1NgBox_base)
+
+RefSys(World)
+Lin(ap_ready_1p)
+
+belt1_Area.Deactivate()
+
+PTP(turn1P)
+PTP(ap_home)
+ 
+WaitTime(999999999)
+END_WHILE
+
+
+
+
+
+
+
+LABEL TakeBelt_2
+//抓取皮带2，示教程序。
+//有注释的部分上方就是要示教的点，分别是（turn2P，ap_ready_2p，TakeWeld_2P_base，Place_2NgBox_base）
+WHILE TRUE DO
+
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+PTP(ap_home)
+PTP(turn2P)
+//2P过渡点（原点往皮带2方向y轴动个50cm）
+PTP(ap_ready_2p)
+//2p准备点（A、确保在皮带2的安全区内   B、确保从上一个点移动过来不会碰撞  C、确保从上个点移动进来不会碰撞）
+
+belt2_Area.Activate()
+
+RefSys(refTOPUP)
+Lin(TakeWeld_2P_base)
+RefSys(refTOP)
+Lin(TakeWeld_2P_base)
+RefSys(World)
+Lin(TakeWeld_2P_base, velPut)
+//2p抓取点（A、确保在皮带2的安全区内   B、确保从上一个点移动过来不会碰撞    C、确保调好抓取点的水平并在world坐标下teach   D、该程序只是大概teach）
+RefSys(refTOP)
+Lin(TakeWeld_2P_base, velPut)
+RefSys(refTOPUP)
+Lin(TakeWeld_2P_base)
+RefSys(World)
+Lin(ap_ready_2p)
+RefSys(refTOPUP)
+Lin(Place_2NgBox_base)
+RefSys(refTOP)
+Lin(Place_2NgBox_base)
+RefSys(World)
+Lin(Place_2NgBox_base, velPut)
+//2ng盒的放置点（A、确保在皮带2的安全区内   B、确保从上一个点移动过来不会碰撞 ）
+RefSys(refTOP)
+Lin(Place_2NgBox_base, velPut)
+RefSys(refTOPUP)
+Lin(Place_2NgBox_base)
+
+RefSys(World)
+Lin(ap_ready_2p)
+
+belt2_Area.Deactivate()
+
+PTP(turn2P)
+PTP(ap_home)
+
+WaitTime(999999999)
+END_WHILE
+
+
+
+
+LABEL Place1
+//放置点示教程序。
+//有注释的部分上方就是要示教的点，分别是（basePOS_P[1]，basePOS_N[1]）
+WHILE TRUE DO
+
+RefSys(World)
+WaitIsFinished()
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+ place_Area.Activate()
+ PTP(ap_home)
+ WAIT iGlass.val
+ 
+ PTP(ap_home_p,adHome,or100)
+ RefSys(refBoardup)
+ Lin(basePOS[1])
+ RefSys(refBoard)
+ Lin(basePOS[1], vellift)
+//放置P参考点(A、只有有大问题或者初调时才会试教该点   B、示教该点时必须取一片已经补偿好的电池片（来示教）   ）
+//（C、如果想要放置点和示教点位重合就得清除所有补偿值    D、示教点位必须在放置安全区内，并且是在refBoard坐标系下示教 ）
+//（ E、保证示教点位吸盘的水平  F、该点上的电池片位置需要尽量和basePOS_N[1]点上电池片的位置重合  G、放置点得和ap_home_p点c轴角度差不多 ) 
+ RefSys(refBoardup)
+ Lin(basePOS[1], vellift)
+ RefSys(World)
+ PTP(ap_home_p)
+ 
+ 
+ PTP(ap_home_n)
+ RefSys(refBoardup)
+ Lin(basePOS_N[1])
+ RefSys(refBoard)
+ Lin(basePOS_N[1], vellift)
+//放置N参考点(A、只有有大问题或者初调时才会试教该点   B、示教该点时必须取一片已经补偿好的电池片（来示教）   ）
+//（C、如果想要放置点和示教点位重合就得清除所有补偿值    D、示教点位必须在放置安全区内，并且是在refBoard坐标系下示教 ）
+//（ E、保证示教点位吸盘的水平  F、该点上的电池片位置需要尽量和basePOS[1]点上电池片的位置重合  G、放置点得和ap_home_N点c轴角度差不多 ) 
+ RefSys(refBoardup)
+ Lin(basePOS_N[1], vellift)
+ RefSys(World)
+ PTP(ap_home_n)
+ 
+ PTP(ap_home, adHome)
+ place_Area.Deactivate() 
+ 
+WaitTime(999999999)
+END_WHILE
+

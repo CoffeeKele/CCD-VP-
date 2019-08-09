@@ -1,0 +1,30 @@
+// KAIROVersion 2.00
+//A、该程序是用来将机器人所以电机角度移动到零点的
+//B、使用该程序时要确保机器人在手动模式，并且没有吸真空。
+//C、该程序全程手动运行（5%速度）
+//D、运行程序时看到轨迹异常就直接停止并关闭程序，调整姿态重新运行程序
+
+RefSys(World)
+WaitIsFinished()
+WHILE TRUE DO
+   Error("Please read the operation manual carefully")
+END_WHILE
+
+
+CALL inital()
+CALL GOhome()
+
+WHILE NOT HomePosArea.isInside DO
+   Error("Outside of start area")
+END_WHILE
+
+   PTP(ap_home)
+   PTP(ap_home_p)
+   //过渡点
+   PTP(ap_transit)
+   //零点
+   PTP(ap_zero)
+   WaitTime(999999999)
+   PTP(ap_transit)
+   PTP(ap_home_p)
+   PTP(ap_home)

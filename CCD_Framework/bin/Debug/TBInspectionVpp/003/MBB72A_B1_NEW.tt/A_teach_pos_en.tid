@@ -1,0 +1,2 @@
+rotate_90 : AXISDIST := (da6 := 90)
+rotate_270 : AXISDIST := (da6 := -90)

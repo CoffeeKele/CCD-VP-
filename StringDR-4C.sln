@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCD_Framework", "CCD_Framework\CCD_Framework.csproj", "{D9D57DAB-C695-4CA1-A61B-200486E60B88}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ReleaseSetup", "ReleaseSetup\ReleaseSetup.vdproj", "{C26E05EC-64E0-4168-B80F-8BC5F33137B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9D57DAB-C695-4CA1-A61B-200486E60B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D57DAB-C695-4CA1-A61B-200486E60B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D57DAB-C695-4CA1-A61B-200486E60B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9D57DAB-C695-4CA1-A61B-200486E60B88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C26E05EC-64E0-4168-B80F-8BC5F33137B6}.Debug|Any CPU.ActiveCfg = Debug
+		{C26E05EC-64E0-4168-B80F-8BC5F33137B6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

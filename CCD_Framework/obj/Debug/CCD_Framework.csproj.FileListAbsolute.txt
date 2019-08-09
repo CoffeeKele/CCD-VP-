@@ -1,0 +1,258 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\CCD_Framework.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\CCD_Framework.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\CCD_Framework.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Display.Controls.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageFile.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.CorePlus.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageProcessing.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Interop.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\stdole.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.Controls.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Database.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Display.Controls.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageFile.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Core.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.CorePlus.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageProcessing.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Database.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.ImageSave.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.MyDisPlayUI.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.PhotoModeUI.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.RunMode.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.SettingOneUI.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.UploadModeUI.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmAbout.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmAcqFifo.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmCalculate.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmImageSave.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmMain.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmQuickBuild.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmSetting.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmSettingOne.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmStartBar.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\CCD_Framework.exe.config
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Display.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageFile.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageProcessing.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.CorePlus.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Interop.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\stdole.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Database.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Display.Controls.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageFile.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageProcessing.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Core.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.CorePlus.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\bin\Debug\Cognex.VisionPro.Database.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.csprojResolveAssemblyReference.cache
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.ImageSave.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.MyDisPlayUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.PhotoModeUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.SettingOneUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Controls.UploadModeUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmAbout.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmAcqFifo.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmCalculate.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmImageSave.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmLogin.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmMain.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmQuickBuild.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmSetting.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmStartBar.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmStdData.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.frmSysSetting.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.Properties.Resources.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.csproj.GenerateResource.Cache
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework\CCD_Framework\obj\Debug\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\CCD_Framework.exe.config
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Display.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageFile.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageProcessing.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.ToolGroup.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.ToolGroup.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Display.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.CorePlus.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Graphic.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.FGGigE.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro3D.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Interop.Core.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\stdole.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.Controls.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Database.dll
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Core.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Display.Controls.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageFile.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageProcessing.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.ToolGroup.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Display.Controls.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.CorePlus.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Graphic.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Core.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.FGGigE.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro3D.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\bin\Debug\Cognex.VisionPro.Database.xml
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.Controls.ImageSave.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.Controls.MyDisPlayUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.Controls.PhotoModeUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.Controls.SettingOneUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.Controls.UploadModeUI.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmAbout.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmAcqFifo.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmCalculate.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmImageSave.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmLogin.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmMain.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmQuickBuild.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmSetting.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmStartBar.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmStdData.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.frmSysSetting.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.Properties.Resources.resources
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.csproj.GenerateResource.Cache
+E:\CCD项目\项目\摆串机检测\源码\CCD_Framework - forVP9\CCD_Framework\obj\Debug\CCD_Framework.csprojResolveAssemblyReference.cache
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\CCD_Framework.exe.config
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Controls.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Core.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Display.Controls.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageFile.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageProcessing.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ToolGroup.Controls.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ToolGroup.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Display.Controls.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.CorePlus.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Graphic.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Core.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.FGGigE.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Interop.Core.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\stdole.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.Controls.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Database.dll
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Core.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Display.Controls.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageFile.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageProcessing.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ToolGroup.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Display.Controls.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.CorePlus.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Graphic.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Core.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.FGGigE.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Database.xml
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.csprojResolveAssemblyReference.cache
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Controls.ImageSave.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Controls.MyDisPlayUI.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Controls.PhotoModeUI.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Controls.SettingOneUI.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Controls.UploadModeUI.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmAbout.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmAcqFifo.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmCalculate.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmImageSave.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmLogin.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmMain.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmQuickBuild.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmSetting.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmStartBar.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmStdData.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmSysSetting.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Properties.Resources.resources
+E:\CCD项目\项目\摆串机检测\SC727\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.csproj.GenerateResource.Cache
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\CCD_Framework.exe.config
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Controls.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Core.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Display.Controls.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageFile.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageProcessing.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ToolGroup.Controls.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ToolGroup.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Display.Controls.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.CorePlus.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Graphic.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Core.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.FGGigE.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Interop.Core.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\stdole.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.Controls.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Database.dll
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Core.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Display.Controls.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageFile.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ImageProcessing.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.ToolGroup.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Display.Controls.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.CorePlus.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Graphic.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.Core.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.FGGigE.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro3D.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Inspection.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\bin\Debug\Cognex.VisionPro.Database.xml
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Controls.ImageSave.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Controls.MyDisPlayUI.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Controls.PhotoModeUI.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Controls.SettingOneUI.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Controls.UploadModeUI.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Resources.EN_US.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmAbout.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmAcqFifo.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmBaseTB.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmCalculate.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmCurrTB.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmImageSave.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmLogin.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmMain.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmQuickBuild.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmSetting.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmStartBar.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmStdData.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmSwitchTB.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmSysSetting.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.frmTBadd.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Properties.Resources.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.Resources.ZH_CN.resources
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.csproj.GenerateResource.Cache
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.exe
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.pdb
+E:\CCD项目\项目\摆串机检测\CCD软件(1对4)\SourceCode\CCD_Framework\obj\Debug\CCD_Framework.csprojResolveAssemblyReference.cache

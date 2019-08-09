@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btn_Login" xml:space="preserve">
+    <value>Login In</value>
+    <comment>登录</comment>
+  </data>
+  <data name="fl_PassWard" xml:space="preserve">
+    <value>PassWard</value>
+    <comment>密码</comment>
+  </data>
+  <data name="fl_UserName" xml:space="preserve">
+    <value>User Name</value>
+    <comment>用户名</comment>
+  </data>
+  <data name="fm_About" xml:space="preserve">
+    <value>About</value>
+    <comment>关于</comment>
+  </data>
+  <data name="fm_AC" xml:space="preserve">
+    <value>Angle Compensation</value>
+    <comment>角度补偿</comment>
+  </data>
+  <data name="fm_ACI" xml:space="preserve">
+    <value>Actual Coordinate Information</value>
+    <comment>实际坐标信息</comment>
+  </data>
+  <data name="fm_AL" xml:space="preserve">
+    <value>Angle Limits</value>
+    <comment>角度允许误差</comment>
+  </data>
+  <data name="fm_Algorithm" xml:space="preserve">
+    <value>Algorithms</value>
+    <comment>算法查看</comment>
+  </data>
+  <data name="fm_CD" xml:space="preserve">
+    <value>Communication Data</value>
+    <comment>通讯数据</comment>
+  </data>
+  <data name="fm_ConnDetails" xml:space="preserve">
+    <value>Connection Details</value>
+    <comment>连接详情</comment>
+  </data>
+  <data name="fm_CPS" xml:space="preserve">
+    <value>Camera Parameter</value>
+    <comment>相机参数设置</comment>
+  </data>
+  <data name="fm_CPSI" xml:space="preserve">
+    <value>Current Parts Standard Information</value>
+    <comment>当前组件标准信息</comment>
+  </data>
+  <data name="fm_Help" xml:space="preserve">
+    <value>Help</value>
+    <comment>帮助</comment>
+  </data>
+  <data name="fm_ImageSave" xml:space="preserve">
+    <value>Image Save</value>
+    <comment>图像保存</comment>
+  </data>
+  <data name="fm_LRS" xml:space="preserve">
+    <value>Left Running State</value>
+    <comment>左侧运行状态</comment>
+  </data>
+  <data name="fm_menu_File1" xml:space="preserve">
+    <value>Add Parts Formula</value>
+    <comment>新增组件配方</comment>
+  </data>
+  <data name="fm_menu_File2" xml:space="preserve">
+    <value>Switching Parts Formula</value>
+    <comment>切换组件配方</comment>
+  </data>
+  <data name="fm_menu_File3" xml:space="preserve">
+    <value>Edit Current Parts Formula</value>
+    <comment>编辑当前组件配方</comment>
+  </data>
+  <data name="fm_menu_File4" xml:space="preserve">
+    <value>Edit Base Parts Formula</value>
+    <comment>编辑基础组件配方</comment>
+  </data>
+  <data name="fm_menu_Files" xml:space="preserve">
+    <value>Files</value>
+    <comment>文件</comment>
+  </data>
+  <data name="fm_menu_PL" xml:space="preserve">
+    <value>Login</value>
+    <comment>权限登录</comment>
+  </data>
+  <data name="fm_Mid1" xml:space="preserve">
+    <value>Midpoint Coordinates 1</value>
+    <comment>中点坐标1</comment>
+  </data>
+  <data name="fm_Mid2" xml:space="preserve">
+    <value>Midpoint Coordinates 2</value>
+    <comment>中点坐标2</comment>
+  </data>
+  <data name="fm_Msg1" xml:space="preserve">
+    <value>Profile parameter format error</value>
+    <comment>配置文件参数格式出错!</comment>
+  </data>
+  <data name="fm_Msg2" xml:space="preserve">
+    <value>Photo number configuration parameters must be greater than 0 and less than 10</value>
+    <comment>拍照数量配置参数必须大于0并且小于10</comment>
+  </data>
+  <data name="fm_OR" xml:space="preserve">
+    <value>Operation Result</value>
+    <comment>运算结果</comment>
+  </data>
+  <data name="fm_OR1" xml:space="preserve">
+    <value>Operation Result 1</value>
+    <comment>运行结果1</comment>
+  </data>
+  <data name="fm_OR2" xml:space="preserve">
+    <value>Operation Result 2</value>
+    <comment>运行结果2</comment>
+  </data>
+  <data name="fm_OT" xml:space="preserve">
+    <value>Operation Times</value>
+    <comment>运行次数</comment>
+  </data>
+  <data name="fm_PA" xml:space="preserve">
+    <value>A Point Coordinate</value>
+    <comment>A点坐标</comment>
+  </data>
+  <data name="fm_PB" xml:space="preserve">
+    <value>B Point Coordinate</value>
+    <comment>B点坐标</comment>
+  </data>
+  <data name="fm_PC" xml:space="preserve">
+    <value>Parts Compensation</value>
+    <comment>组件补偿</comment>
+  </data>
+  <data name="fm_PM" xml:space="preserve">
+    <value>MidPoint Coordinate</value>
+    <comment>中点坐标</comment>
+  </data>
+  <data name="fm_PN" xml:space="preserve">
+    <value>Parts Name</value>
+    <comment>组件名称</comment>
+  </data>
+  <data name="fm_RC" xml:space="preserve">
+    <value>Robot Compensation</value>
+    <comment>机器人补偿</comment>
+  </data>
+  <data name="fm_Rec" xml:space="preserve">
+    <value>Receive Data</value>
+    <comment>接收</comment>
+  </data>
+  <data name="fm_RRS" xml:space="preserve">
+    <value>Right Running State</value>
+    <comment>右侧运行状态</comment>
+  </data>
+  <data name="fm_RS" xml:space="preserve">
+    <value>Running State</value>
+    <comment>运行状态</comment>
+  </data>
+  <data name="fm_SDC" xml:space="preserve">
+    <value>Standard Data</value>
+    <comment>基准数据配置</comment>
+  </data>
+  <data name="fm_Send" xml:space="preserve">
+    <value>Send Data</value>
+    <comment>发送</comment>
+  </data>
+  <data name="fm_SS" xml:space="preserve">
+    <value>System Settings</value>
+    <comment>系统设置</comment>
+  </data>
+  <data name="fm_TCP_Comm" xml:space="preserve">
+    <value>TCP Communication</value>
+    <comment>TCP通讯</comment>
+  </data>
+  <data name="fm_TCP_Conn" xml:space="preserve">
+    <value>TCP Connection</value>
+    <comment>TCP连接</comment>
+  </data>
+  <data name="fm_XDL" xml:space="preserve">
+    <value>X Direction Limits</value>
+    <comment>X允许误差</comment>
+  </data>
+  <data name="fm_XYC" xml:space="preserve">
+    <value>X, Y Direction Compensation</value>
+    <comment>X,Y方向补偿</comment>
+  </data>
+  <data name="fm_YDL" xml:space="preserve">
+    <value>Y Direction Limits</value>
+    <comment>Y允许误差</comment>
+  </data>
+  <data name="frmMain_Text" xml:space="preserve">
+    <value>CCD String Rectify Deviation 4C</value>
+    <comment>摆串机纠偏</comment>
+  </data>
+  <data name="btn_Close" xml:space="preserve">
+    <value>Close</value>
+    <comment>关闭</comment>
+  </data>
+  <data name="btn_Save" xml:space="preserve">
+    <value>Save</value>
+    <comment>保存</comment>
+  </data>
+  <data name="btn_SaveAll" xml:space="preserve">
+    <value>SaveAll</value>
+    <comment>保存所有</comment>
+  </data>
+  <data name="btn_Use" xml:space="preserve">
+    <value>Using</value>
+    <comment>启用</comment>
+  </data>
+  <data name="common_Info" xml:space="preserve">
+    <value>Message</value>
+    <comment>信息提示</comment>
+  </data>
+  <data name="common_SaveAllSuccess" xml:space="preserve">
+    <value>Save All Success</value>
+    <comment>所有保存成功</comment>
+  </data>
+  <data name="common_SaveFailed" xml:space="preserve">
+    <value>Save Failed</value>
+    <comment>保存失败</comment>
+  </data>
+  <data name="common_SaveSuccess" xml:space="preserve">
+    <value>Save Success</value>
+    <comment>保存成功</comment>
+  </data>
+  <data name="fctb_AF" xml:space="preserve">
+    <value>Algorithms File</value>
+    <comment>算法文件</comment>
+  </data>
+  <data name="fctb_Msg1" xml:space="preserve">
+    <value>Algorithmic File Loading Failed</value>
+    <comment>算法文件加载失败</comment>
+  </data>
+  <data name="fctb_Msg2" xml:space="preserve">
+    <value>The algorithmic file has been modified. Do you save the modified algorithmic file?</value>
+    <comment>算法文件已修改,是否保存修改过的算法文件</comment>
+  </data>
+  <data name="fl_Msg1" xml:space="preserve">
+    <value>User name cannot be empty</value>
+    <comment>用户名不能为空</comment>
+  </data>
+  <data name="fl_Msg2" xml:space="preserve">
+    <value>Password cannot be empty</value>
+    <comment>密码不能为空</comment>
+  </data>
+  <data name="fl_Msg3" xml:space="preserve">
+    <value>Username or password incorrect</value>
+    <comment>用户名或密码不正确</comment>
+  </data>
+  <data name="fm_Camera" xml:space="preserve">
+    <value>Camera</value>
+    <comment>相机</comment>
+  </data>
+  <data name="fm_CPM" xml:space="preserve">
+    <value>Camera Photo Mode</value>
+    <comment>相机拍照模式</comment>
+  </data>
+  <data name="fm_Msg10" xml:space="preserve">
+    <value>Loading mode interface</value>
+    <comment>加载模式界面</comment>
+  </data>
+  <data name="fm_Msg11" xml:space="preserve">
+    <value>Connect TCP</value>
+    <comment>连接TCP</comment>
+  </data>
+  <data name="fm_Msg12" xml:space="preserve">
+    <value>Loading product standard data</value>
+    <comment>加载产品标准数据</comment>
+  </data>
+  <data name="fm_Msg13" xml:space="preserve">
+    <value>Load complete</value>
+    <comment>加载完成</comment>
+  </data>
+  <data name="fm_Msg14" xml:space="preserve">
+    <value>Camera profile does not exist</value>
+    <comment>相机配置文件不存在</comment>
+  </data>
+  <data name="fm_Msg15" xml:space="preserve">
+    <value>Algorithmic file does not exist</value>
+    <comment>算法文件不存在</comment>
+  </data>
+  <data name="fm_Msg16" xml:space="preserve">
+    <value>Successful Camera Connection</value>
+    <comment>相机连接成功</comment>
+  </data>
+  <data name="fm_Msg17" xml:space="preserve">
+    <value>Connection failed</value>
+    <comment>连接失败</comment>
+  </data>
+  <data name="fm_Msg18" xml:space="preserve">
+    <value>Photographs Not Finding Battery Platern. Please Make sure that Battery Plate is in the field of vision and is not deformed or damaged or occluded by other obstacles</value>
+    <comment>拍摄未找到电池片 请确认电池片在视野范围内并且未变形或损坏或被其它障碍物遮挡</comment>
+  </data>
+  <data name="fm_Msg19" xml:space="preserve">
+    <value>shooting failed to find the battery pinrn.Please make sure that the battery pin is not deformed or damaged or covered by other obstacles.</value>
+    <comment>拍摄未找到电池片引脚 请确认电池片引脚未变形或损坏或被其它障碍物遮挡</comment>
+  </data>
+  <data name="fm_Msg20" xml:space="preserve">
+    <value>The X direction of the battery is beyond the allowable field of view of the camera.</value>
+    <comment>电池片X方向超出相机视野允许范围</comment>
+  </data>
+  <data name="fm_Msg21" xml:space="preserve">
+    <value>The Y direction of the battery is beyond the allowable field of view of the camera.</value>
+    <comment>电池片Y方向超出相机视野允许范围</comment>
+  </data>
+  <data name="fm_Msg22" xml:space="preserve">
+    <value>Angle Direction of Battery Plate Out of the Permissible Field of Vision</value>
+    <comment>电池片角度Angle方向超出视野允许范围</comment>
+  </data>
+  <data name="fm_Msg23" xml:space="preserve">
+    <value>Connection Success</value>
+    <comment>连接成功</comment>
+  </data>
+  <data name="fm_Msg24" xml:space="preserve">
+    <value>Disconnect</value>
+    <comment>断开连接</comment>
+  </data>
+  <data name="fm_Msg25" xml:space="preserve">
+    <value>User is logged in</value>
+    <comment>用户已登录</comment>
+  </data>
+  <data name="fm_Msg3" xml:space="preserve">
+    <value>Camera and algorithmic files must have values Camera and algorithmic files must have values Camera and algorithmic files must have values greater than 0 in the configuration file</value>
+    <comment>相机和算法文件在配置文件中的值必须要大于0</comment>
+  </data>
+  <data name="fm_Msg4" xml:space="preserve">
+    <value>Check Camera Profile Path</value>
+    <comment>检查相机配置文件路径</comment>
+  </data>
+  <data name="fm_Msg5" xml:space="preserve">
+    <value>Loading Camera Profile</value>
+    <comment>加载相机配置文件</comment>
+  </data>
+  <data name="fm_Msg6" xml:space="preserve">
+    <value>Check Algorithmic Profile Path</value>
+    <comment>检查算法配置文件路径</comment>
+  </data>
+  <data name="fm_Msg7" xml:space="preserve">
+    <value>Loading algorithm files</value>
+    <comment>加载算法文件</comment>
+  </data>
+  <data name="fm_Msg8" xml:space="preserve">
+    <value>Connecting camera</value>
+    <comment>连接相机</comment>
+  </data>
+  <data name="fm_Msg9" xml:space="preserve">
+    <value>Load menu drop-down options</value>
+    <comment>加载菜单下拉选项</comment>
+  </data>
+  <data name="fm_UPM" xml:space="preserve">
+    <value>Upload Picture Mode</value>
+    <comment>上传图片模式</comment>
+  </data>
+  <data name="fstb_EP" xml:space="preserve">
+    <value>Using Parts</value>
+    <comment>启用组件</comment>
+  </data>
+  <data name="fstb_Msg1" xml:space="preserve">
+    <value>Are you sure to enable this part formula?</value>
+    <comment>是否确定启用该组件配方</comment>
+  </data>
+  <data name="fstb_Text" xml:space="preserve">
+    <value>Switching Parts Formula</value>
+    <comment>切换组件配方</comment>
+  </data>
+  <data name="ftba_Msg1" xml:space="preserve">
+    <value>Parts name cannot be empty</value>
+    <comment>组件名称不能为空</comment>
+  </data>
+  <data name="ftba_Msg2_f" xml:space="preserve">
+    <value>Algorithmic file does not exist</value>
+    <comment>算法文件不存在</comment>
+  </data>
+  <data name="ftba_Msg2_h" xml:space="preserve">
+    <value>The Basic Parts Formula</value>
+    <comment>基础组件配方</comment>
+  </data>
+  <data name="ftba_Msg3" xml:space="preserve">
+    <value>Whether to Enable the Component Formula</value>
+    <comment>是否启用该组件配方</comment>
+  </data>
+  <data name="ftba_PN" xml:space="preserve">
+    <value>Name</value>
+    <comment>组件名称</comment>
+  </data>
+  <data name="ftba_Text" xml:space="preserve">
+    <value>Add Parts Formula</value>
+    <comment>新增组件配方</comment>
+  </data>
+  <data name="btn_Apply" xml:space="preserve">
+    <value>Apply</value>
+    <comment>应用</comment>
+  </data>
+  <data name="btn_Calculation" xml:space="preserve">
+    <value>Calculation</value>
+    <comment>计算</comment>
+  </data>
+  <data name="btn_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>取消</comment>
+  </data>
+  <data name="btn_Copy" xml:space="preserve">
+    <value>Copy</value>
+    <comment>复制</comment>
+  </data>
+  <data name="btn_Delete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>删除</comment>
+  </data>
+  <data name="btn_Edit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>编辑</comment>
+  </data>
+  <data name="btn_OK" xml:space="preserve">
+    <value>OK</value>
+    <comment>确定</comment>
+  </data>
+  <data name="btn_Reset" xml:space="preserve">
+    <value>Reset</value>
+    <comment>重置</comment>
+  </data>
+  <data name="common_Camera" xml:space="preserve">
+    <value>Camera</value>
+    <comment>相机</comment>
+  </data>
+  <data name="faq_Text" xml:space="preserve">
+    <value>Camera Settings</value>
+    <comment>相机设置</comment>
+  </data>
+  <data name="fbtb_AF" xml:space="preserve">
+    <value>Algorithms File</value>
+    <comment>算法文件</comment>
+  </data>
+  <data name="fbtb_Msg1" xml:space="preserve">
+    <value>was not opened</value>
+    <comment>未打开</comment>
+  </data>
+  <data name="fbtb_Msg2" xml:space="preserve">
+    <value>does not exist</value>
+    <comment>不存在</comment>
+  </data>
+  <data name="fbtb_Msg3" xml:space="preserve">
+    <value>was not saved  Determine to open algorithm file</value>
+    <comment>未保存确定要打开算法文件</comment>
+  </data>
+  <data name="fbtb_Text" xml:space="preserve">
+    <value>Edit Base Parts Formula</value>
+    <comment>编辑基础组件配方</comment>
+  </data>
+  <data name="fctb_Text" xml:space="preserve">
+    <value>Edit Current Parts Formula</value>
+    <comment>编辑当前组件配方</comment>
+  </data>
+  <data name="fqb_Text" xml:space="preserve">
+    <value>Algorithms View</value>
+    <comment>算法查看</comment>
+  </data>
+  <data name="fsd_AL" xml:space="preserve">
+    <value>Angle Limits</value>
+    <comment>角度允许偏差</comment>
+  </data>
+  <data name="fsd_Angle1" xml:space="preserve">
+    <value>Angle1</value>
+    <comment>角度1</comment>
+  </data>
+  <data name="fsd_Angle2" xml:space="preserve">
+    <value>Angle2</value>
+    <comment>角度2</comment>
+  </data>
+  <data name="fsd_Constant" xml:space="preserve">
+    <value>Constant</value>
+    <comment>常量</comment>
+  </data>
+  <data name="fsd_CRA" xml:space="preserve">
+    <value>Central Rotation Angle</value>
+    <comment>中心旋转角度</comment>
+  </data>
+  <data name="fsd_Mid1" xml:space="preserve">
+    <value>Midpoint Coordinates 1</value>
+    <comment>中点坐标1</comment>
+  </data>
+  <data name="fsd_Mid2" xml:space="preserve">
+    <value>Midpoint Coordinates 2</value>
+    <comment>中点坐标2</comment>
+  </data>
+  <data name="fsd_Msg1" xml:space="preserve">
+    <value>The currently running formula cannot be deleted</value>
+    <comment>当前运行的配方不能删除</comment>
+  </data>
+  <data name="fsd_Msg2" xml:space="preserve">
+    <value>Are you sure you want to delete the recipe data?</value>
+    <comment>你确定要删除该配方数据吗</comment>
+  </data>
+  <data name="fsd_Msg3" xml:space="preserve">
+    <value>The corresponding algorithmic files will also be deleted together</value>
+    <comment>对应的算法文件也会一起删除</comment>
+  </data>
+  <data name="fsd_Msg4" xml:space="preserve">
+    <value>Are you sure you want to copy the recipe data?</value>
+    <comment>你确定要复制该配方数据吗</comment>
+  </data>
+  <data name="fsd_Msg5" xml:space="preserve">
+    <value>Please click on the Edit button before editing and saving again.</value>
+    <comment>请先点击编辑按钮再重新编辑保存</comment>
+  </data>
+  <data name="fsd_Msg6" xml:space="preserve">
+    <value>Input Format Error</value>
+    <comment>输入格式错误</comment>
+  </data>
+  <data name="fsd_Note" xml:space="preserve">
+    <value>Note</value>
+    <comment>备注</comment>
+  </data>
+  <data name="fsd_PN" xml:space="preserve">
+    <value>Parts Name</value>
+    <comment>组件名称</comment>
+  </data>
+  <data name="fsd_Text" xml:space="preserve">
+    <value>Standard Data Configuration</value>
+    <comment>基准数据配置</comment>
+  </data>
+  <data name="fsd_XDC" xml:space="preserve">
+    <value>X Direction Compensation</value>
+    <comment>组件X方向移动偏差</comment>
+  </data>
+  <data name="fsd_XDL" xml:space="preserve">
+    <value>X Direction Limits</value>
+    <comment>X允许误差</comment>
+  </data>
+  <data name="fsd_YDC" xml:space="preserve">
+    <value>Y Direction Compensation</value>
+    <comment>组件Y方向移动偏差</comment>
+  </data>
+  <data name="fsd_YDL" xml:space="preserve">
+    <value>Y Direction Limits</value>
+    <comment>Y允许误差</comment>
+  </data>
+  <data name="fs_EN" xml:space="preserve">
+    <value>English</value>
+    <comment>英语</comment>
+  </data>
+  <data name="fs_Gb1" xml:space="preserve">
+    <value>Operating mode selection</value>
+    <comment>运行模式选择</comment>
+  </data>
+  <data name="fs_Gb2" xml:space="preserve">
+    <value>Language Choice</value>
+    <comment>语言选择</comment>
+  </data>
+  <data name="fs_Photograph" xml:space="preserve">
+    <value>Photograph</value>
+    <comment>相机拍照</comment>
+  </data>
+  <data name="fs_Text" xml:space="preserve">
+    <value>System Settings</value>
+    <comment>系统设定</comment>
+  </data>
+  <data name="fs_Upload" xml:space="preserve">
+    <value>Upload</value>
+    <comment>照片上传</comment>
+  </data>
+  <data name="fs_ZH" xml:space="preserve">
+    <value>Simple Chinese</value>
+    <comment>简体中文</comment>
+  </data>
+  <data name="is_AF" xml:space="preserve">
+    <value>Automatic Generation Date Folders</value>
+    <comment>自动生成日期文件夹</comment>
+  </data>
+  <data name="is_AP" xml:space="preserve">
+    <value>All Pictures</value>
+    <comment>所有图片</comment>
+  </data>
+  <data name="is_Browse" xml:space="preserve">
+    <value>Browse...</value>
+    <comment>浏览...</comment>
+  </data>
+  <data name="is_CP" xml:space="preserve">
+    <value>Correct Pictures</value>
+    <comment>正确图片</comment>
+  </data>
+  <data name="is_IPF" xml:space="preserve">
+    <value>Image preservation format</value>
+    <comment>图像保存格式</comment>
+  </data>
+  <data name="is_IPP" xml:space="preserve">
+    <value>Image preservation path</value>
+    <comment>图像保存路径</comment>
+  </data>
+  <data name="is_Msg1" xml:space="preserve">
+    <value>Please select folders</value>
+    <comment>请选择文件夹</comment>
+  </data>
+  <data name="is_PS" xml:space="preserve">
+    <value>Pictures to be saved</value>
+    <comment>需要保存的图片</comment>
+  </data>
+  <data name="is_PT" xml:space="preserve">
+    <value>Picture  Named By Date</value>
+    <comment>图片名称以日期时间命名</comment>
+  </data>
+  <data name="is_SPL" xml:space="preserve">
+    <value>Save the picture to the local place</value>
+    <comment>是否保存图片到本地</comment>
+  </data>
+  <data name="is_ST" xml:space="preserve">
+    <value>Save Pictures Using Cognex Tools</value>
+    <comment>使用Cognex工具保存图片</comment>
+  </data>
+  <data name="is_Text" xml:space="preserve">
+    <value>Image Saving Settings</value>
+    <comment>图像保存设置</comment>
+  </data>
+  <data name="is_WP" xml:space="preserve">
+    <value>Wrong Pictures</value>
+    <comment>错误图片</comment>
+  </data>
+  <data name="pm_Auto" xml:space="preserve">
+    <value>Automatic</value>
+    <comment>自动</comment>
+  </data>
+  <data name="pm_Manual" xml:space="preserve">
+    <value>Manual</value>
+    <comment>手动</comment>
+  </data>
+  <data name="pm_Msg1" xml:space="preserve">
+    <value>In process of  real-time display...</value>
+    <comment>正在实时显示</comment>
+  </data>
+  <data name="pm_Photograph" xml:space="preserve">
+    <value>Photograph</value>
+    <comment>拍照</comment>
+  </data>
+  <data name="pm_RTD" xml:space="preserve">
+    <value>Real-time Display</value>
+    <comment>实时显示</comment>
+  </data>
+  <data name="pm_SR" xml:space="preserve">
+    <value>Stop Real-time</value>
+    <comment>停止实时</comment>
+  </data>
+  <data name="um_AF" xml:space="preserve">
+    <value>All Files</value>
+    <comment>所有文件</comment>
+  </data>
+  <data name="um_Run" xml:space="preserve">
+    <value>Run</value>
+    <comment>运行</comment>
+  </data>
+  <data name="um_SP" xml:space="preserve">
+    <value>Select Pictures</value>
+    <comment>选择图片</comment>
+  </data>
+  <data name="um_UP" xml:space="preserve">
+    <value>Upload</value>
+    <comment>上传图片</comment>
+  </data>
+  <data name="fm_OAS" xml:space="preserve">
+    <value>Overload algorithm schedule</value>
+    <comment>重载算法进度</comment>
+  </data>
+  <data name="fsd_CL" xml:space="preserve">
+    <value>CellLength</value>
+    <comment>串长</comment>
+  </data>
+  <data name="fsd_Lt" xml:space="preserve">
+    <value>Limits</value>
+    <comment>偏差</comment>
+  </data>
+  <data name="fm_LNG" xml:space="preserve">
+    <value>The length of the measurement exceeds the standard value. Please check the middle edge for errors.</value>
+    <comment>测量长度超出了标准值，请检查中间边缘部分是否找错</comment>
+  </data>
+  <data name="fm_WNG" xml:space="preserve">
+    <value>The measurement width is beyond the standard value. Please check whether the edges on both sides are wrong.</value>
+    <comment>测量宽度超出了标准值，请检查两边边缘部分是否找错</comment>
+  </data>
+  <data name="fm_SWL" xml:space="preserve">
+    <value>Whether to send data (abnormal battery width or length)</value>
+    <comment>是否发送数据（电池片宽度或长度异常）</comment>
+  </data>
+</root>

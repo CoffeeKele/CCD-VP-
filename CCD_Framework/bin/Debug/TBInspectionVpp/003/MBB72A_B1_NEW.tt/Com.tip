@@ -1,0 +1,235 @@
+// KAIROVersion 2.00
+WHILE TRUE DO
+LABEL start
+
+WaitTime(100)
+number := 0
+count := 0
+
+
+
+Ret_count := 0
+LABEL rst_3
+waitobj := Vision_WaitObj(Vision1, 80)
+WHILE NOT ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0) AND (CamID.val =0) AND (waitobj = FALSE)) DO
+ Ret_count := Ret_count + 1
+ IF Ret_count > 5 THEN
+ Vision_Enable(Vision1, FALSE)
+ CALL vision()
+  Ang_photo_Reset := Ang_photo_Reset + 1
+ GOTO start
+ END_IF
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "Ready")
+ waitobj := Vision_WaitObj(Vision1, 2000)
+ IF waitobj = FALSE THEN
+    GOTO rst_3
+ END_IF
+ WaitTime(100)
+ Vision_ReadData(Vision1)
+ WaitTime(50)
+ waitobj := Vision_WaitObj(Vision1, 80)
+END_WHILE
+
+WaitTime(50)
+
+
+
+
+IF (TakeEnable1.val) AND (ReadyTake1.val = FALSE) THEN
+ WaitTime(200)
+ LABEL rst_1 
+ IF NOT TakeEnable1.val THEN
+   GOTO start
+END_IF
+ 
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "pos2")
+ waitobj := Vision_WaitObj(Vision1, 4000)
+ 
+ IF waitobj = FALSE THEN
+ IF count = 1 THEN
+    Info("CCD_Belt1 Photo Eseet!")
+    Ang_photo1_Reset := Ang_photo1_Reset + 1
+    Vision_Enable(Vision1, FALSE)
+    CALL vision()
+    //GOTO rst_1
+ ELSIF count >= 3 THEN
+  IF Ang_Error_on THEN
+  WAIT tm2000.q
+  Error("CCD_Belt1 Photo Ng!")
+  END_IF
+    Info("CCD_Belt1 Photo Ng!")
+    Ang_photo1 := Ang_photo1 + 1
+    WaitIsFinished()
+    PHOTO1_ng_count:= PHOTO1_ng_count + 1
+    ReadyTake1.Set(TRUE)
+    Vision_Enable(Vision1, FALSE)
+    CALL vision()
+    IF ((PHOTO1_ng_count MOD 3) = 0) AND (PHOTO1_ng_count <> 0) THEN
+      WaitIsFinished()
+      PHOTO1_3ng.Pulse(TRUE, 2000)
+    END_IF
+    GOTO start
+ END_IF
+ count := count + 1
+ GOTO rst_1
+END_IF
+
+WaitTime(150)
+IF (CamID.val <> 0) AND (number = 0) THEN
+  IF Ang_Error_on THEN
+  WAIT tm2000.q
+  Error("CCD CamID <> 0!")
+  END_IF
+    Info("CCD CamID <> 0!")
+    Ang_photoID := Ang_photoID + 1
+    Vision_Enable(Vision1, FALSE)
+    CALL vision()
+    GOTO start
+END_IF
+WaitIsFinished()
+Vision_ReadData(Vision1)
+WaitTime(200)
+
+
+IF ((ABS(CamX.val) >= 25) OR (ABS(CamY.val) >= 25) OR (ABS(CamA.val) >= 2) OR (CamID.val <> 20)) OR ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0)) OR ((CamX.val = MoveX1) AND (CamY.val = MoveY1) AND (CamA.val = MoveC1) ) OR ((CamX.val = MoveX2) AND (CamY.val = MoveY2) AND (CamA.val = MoveC2) ) THEN
+  IF number >= 3 THEN
+    IF Ang_Error_on THEN
+  WAIT tm2000.q
+  Error("CCD_Belt1 Photo_Date Ng!")
+  END_IF
+    Info("CCD_Belt1 Photo_Date Ng!")
+    Ang_photoDate1 := Ang_photoDate1 + 1
+    WaitIsFinished()
+    PHOTO1_ng_count:= PHOTO1_ng_count + 1
+    ReadyTake1.Set(TRUE)
+    IF ((PHOTO1_ng_count MOD 3) = 0) AND (PHOTO1_ng_count <> 0) THEN
+       WaitIsFinished()
+       PHOTO1_3ng.Pulse(TRUE, 2000)
+    END_IF
+    GOTO start
+  END_IF
+    number := number + 1
+    GOTO rst_1
+  ELSE
+    MoveX1 := CamX.val
+    MoveY1 := CamY.val
+    MoveC1 := CamA.val
+    MoveID1 := CamID.val
+    i0 := i0 + 01
+    WaitIsFinished()
+    PHOTO1_ng_count:= 0
+    ReadyTake1.Set(TRUE)
+END_IF
+ 
+ 
+ 
+ELSIF (TakeEnable2.val) AND (ReadyTake2.val = FALSE)  THEN
+ WaitTime(200)
+ LABEL rst_2
+ IF NOT TakeEnable2.val THEN
+   GOTO start
+ END_IF
+  
+ Vision_Connected(Vision1, 1000)
+ WaitTime(200)
+ Vision_SendData(Vision1, "pos1")
+ waitobj := Vision_WaitObj(Vision1, 4000)
+
+IF waitobj = FALSE THEN
+ IF count = 1 THEN
+    Info("CCD_Belt2 Photo Eseet!")
+    Ang_photo2_Reset := Ang_photo2_Reset + 1
+    Vision_Enable(Vision1, FALSE)
+    CALL vision()
+    //GOTO rst_2
+ ELSIF count >= 3 THEN
+  IF Ang_Error_on THEN
+  WAIT tm2000.q
+  Error("CCD_Belt2 Photo Ng!")
+  END_IF
+ Info("CCD_Belt2 Photo Ng!")
+ Ang_photo2 := Ang_photo2 + 1
+ WaitIsFinished()
+ PHOTO2_ng_count:= PHOTO2_ng_count + 1
+    ReadyTake2.Set(TRUE)
+    Vision_Enable(Vision1, FALSE)
+    CALL vision() 
+    IF ((PHOTO2_ng_count MOD 3) = 0) AND (PHOTO2_ng_count <> 0) THEN
+      WaitIsFinished()
+      PHOTO2_3ng.Pulse(TRUE, 2000)
+    END_IF
+    GOTO start
+ END_IF
+ count := count + 1
+ GOTO rst_2
+END_IF
+
+WaitTime(150)
+IF (CamID.val <> 0) AND (number = 0) THEN
+  IF Ang_Error_on THEN
+  WAIT tm2000.q
+  Error("CCD CamID <> 0!")
+  END_IF
+ Info("CCD CamID <> 0!")
+ Ang_photoID := Ang_photoID + 1
+    Vision_Enable(Vision1, FALSE)
+    CALL vision()
+    GOTO start
+END_IF
+WaitIsFinished()
+Vision_ReadData(Vision1)
+WaitTime(200)
+
+IF ((ABS(CamX.val) >= 25) OR (ABS(CamY.val) >= 25) OR (ABS(CamA.val) >= 2) OR (CamID.val <> 10))   OR   ((ABS(CamX.val) =0) AND (ABS(CamY.val) =0) AND (ABS(CamA.val) =0))   OR   ((CamX.val = MoveX1) AND (CamY.val = MoveY1) AND (CamA.val = MoveC1) )    OR   ((CamX.val = MoveX2) AND (CamY.val = MoveY2) AND (CamA.val = MoveC2) ) THEN
+  IF number>= 3 THEN
+    IF Ang_Error_on THEN
+  WAIT tm2000.q
+  Error("CCD_Belt2 Photo_Date Ng!")
+  END_IF
+ Info("CCD_Belt2 Photo_Date Ng!")
+ Ang_photoDate2 := Ang_photoDate2 + 1
+    WaitIsFinished()
+ PHOTO2_ng_count:= PHOTO2_ng_count + 1
+    ReadyTake2.Set(TRUE)
+    IF ((PHOTO2_ng_count MOD 3) = 0) AND (PHOTO2_ng_count <> 0) THEN
+       WaitIsFinished()
+  PHOTO2_3ng.Pulse(TRUE, 2000)
+    END_IF
+    GOTO start
+   END_IF 
+    number := number + 1
+    GOTO rst_2
+ELSE
+    MoveX2 := CamX.val
+    MoveY2 := CamY.val
+    MoveC2 := CamA.val
+    MoveID2 := CamID.val
+    i0 := i0 + 01
+    WaitIsFinished()
+    PHOTO2_ng_count:= 0
+    ReadyTake2.Set(TRUE)
+END_IF
+END_IF
+
+//IF ReadyTake1.val AND ReadyTake2.val THEN
+//   WaitTime(5000)
+//   MoveX1 := 0
+//   MoveY1 := 0
+//   MoveC1 := 0
+//   MoveID1 := 0
+//   WaitJustInTime()
+//   ReadyTake1.Set(FALSE)
+//   MoveX2 := 0
+//   MoveY2 := 0
+//   MoveC2 := 0
+//   MoveID2 := 0
+//   WaitJustInTime()
+//   ReadyTake2.Set(FALSE)
+//END_IF
+
+END_WHILE
+

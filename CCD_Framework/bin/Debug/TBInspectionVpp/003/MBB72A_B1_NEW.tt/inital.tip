@@ -1,0 +1,38 @@
+// KAIROVersion 2.00
+clkCycle.Stop()
+clkCycle.Reset()
+
+fangdai := 0
+PLC_word.val := 0
+NUM_plc.val := 0
+waitobj := FALSE
+
+WaitJustInTime()
+ReadyTake1.Set(FALSE)
+ReadyTake2.Set(FALSE)
+qCapAbsorb.Set(FALSE)
+qCapBlow.Pulse(TRUE, 500)
+
+tm2000.Stop()
+tm2000.q := FALSE
+
+MoveX1 := 0
+MoveY1 := 0
+MoveC1 := 0
+MoveID1 := 0
+MoveX2 := 0
+MoveY2 := 0
+MoveC2 := 0
+MoveID2 := 0
+
+num  := 0
+num1 := 0 
+num2 := 0
+
+Count_ok:= FALSE
+
+PHOTO1_ng_count:= 0
+PHOTO2_ng_count:= 0
+NG1_bit:= FALSE
+NG2_bit:= FALSE
+

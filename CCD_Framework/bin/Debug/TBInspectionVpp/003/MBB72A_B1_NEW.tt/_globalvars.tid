@@ -1,0 +1,124 @@
+ap_home_p : AXISPOS := (a1 := 0.000306677, a2 := 36.615, a3 := 14.7427, a4 := 0.00757287, a5 := 38.6468, 
+a6 := 29.828)
+ap_home_n : AXISPOS := (a1 := 0.000342913, a2 := 36.6132, a3 := 14.7425, a4 := 0.00838342, a5 := 38.6461, 
+a6 := -150.172)
+
+
+waitobj : BOOL := TRUE
+
+count : DINT := 0
+number : DINT := 0
+Ret_count : DINT
+
+TakeWeld_2P_base : CARTPOS := (x := -195.372, y := 1688.78, z := 121.5, a := 113.61, b := 179.129, c := -5.81507, 
+mode := 1)
+TakeWeld_1P_base : CARTPOS := (x := -221.292, y := -1729.56, z := 122.646, a := 91.6711, b := 179.544, 
+c := -28.0092, mode := 1)
+Place_2NgBox_base : CARTPOS := (x := -117.424, y := 1370.08, z := 111.742, a := 113.61, b := 179.129, 
+c := -5.83117, mode := 1)
+Place_1NgBox_base : CARTPOS := (x := -161.404, y := -1449.55, z := 140.004, a := 86.9507, b := 179.542, 
+c := -32.7161, mode := 1)
+TakeCache_2P : CARTPOS := (x := -182.097, y := -1673.41, z := 113.889, a := -1.55807, b := 179.931, 
+c := -76.6808, mode := 1)
+TakeCache_1P : CARTPOS := (x := -211.213, y := 1699, z := 113.512, a := 91.7971, b := 179.305, c := 16.808, 
+mode := 1)
+
+refTOPUP : CARTREFSYS := (baseRefSys := MAP(World), z := 150)
+refTOPUP_30 : CARTREFSYS := (baseRefSys := MAP(World), z := 170)
+refTOP : CARTREFSYS := (baseRefSys := MAP(World), z := 27)
+velPut : DYNAMIC := (velAxis := 100, accAxis := 100, decAxis := 100, jerkAxis := 100, vel := 400, acc := 1500, 
+dec := 1000, jerk := 12000, velOri := 360, accOri := 720, decOri := 720, jerkOri := 50000)
+HomePosArea : AREA := (areaType := SIGNALWORKAREA, refSys := MAP(World), startPos := (x := 1370, y := -20, 
+z := 290), initialActive := TRUE, distX := 40, distY := 40, distZ := 40, visibleDimensions := (TRUE, 
+, ), xmlShape := 2, isDisengageable := FALSE, moveSmoothly := (, , , , , , , ), workingTime_s := (, , 
+, , , , , ), smoothnessFactor := (1.5, , , , , , , ))
+
+Path : DINT := 0
+
+Addx_1 : ARRAY[1..12] OF REAL := (, -0.55, 0.35, -0.375, 0.8, 0.05, , , , , , )  
+Addy_1 : ARRAY[1..12] OF REAL := (, , , , , , , , , , , )
+Addc_1 : ARRAY[1..12] OF REAL := (, 0.003, 0.008, -0.049, -0.071, -0.095, , , , , , )
+Addz_1 : ARRAY[1..12] OF REAL := (, , , , , , , , , , ,  )  
+Adda_1 : ARRAY[1..12] OF REAL := (, , , , , , , , , , ,  )
+Addb_1 : ARRAY[1..12] OF REAL := (, , , , , , , , , , ,  )
+addx_1 : REAL := 0 
+addy_1 : REAL 
+addz_1 : REAL
+addc_1 : REAL := 0.024 
+
+Addx_2 : ARRAY[1..12] OF REAL := (-0.45, -0.7, -0.475, 0.525, -0.15, 0.775, , , , , , )
+Addy_2 : ARRAY[1..12] OF REAL := (, , , , , , , , , , , )
+Addc_2 : ARRAY[1..12] OF REAL := (-0.004, 0.006, -0.029, -0.046, -0.098, -0.105, , , , , , )
+Addz_2 : ARRAY[1..12] OF REAL := (, , , , , , , , , , ,  )  
+Adda_2 : ARRAY[1..12] OF REAL := (, , , , , , , , , , ,  )
+Addb_2 : ARRAY[1..12] OF REAL := (, , , , , , , , , , ,  )
+addx_2 : REAL 
+addy_2 : REAL 
+addz_2 : REAL
+addc_2 : REAL
+
+All_addx : REAL 
+All_addy : REAL 
+All_addz : REAL 
+All_addc : REAL 
+
+basePOS : ARRAY[1..12] OF CARTPOS := ((x := 18, y := -24, z := -0.369199, a := 157.508, b := 178.457, 
+c := -52.105, mode := 1), (x := 1198.16, y := -0.0197608, z := -9.09382, a := 12.6363, b := 179.533, 
+c := -17.5422, mode := 1), (x := 345.05, y := -25, z := -0.369199, a := 157.508, b := 178.457, c := -52.06, 
+mode := 1), (x := 1519.87, y := -0.0197608, z := -5.56608, a := 12.1618, b := 179.533, c := -17.5603, 
+mode := 1), (x := 673.45, y := -25, z := -0.369199, a := 157.508, b := 178.457, c := -52.06, mode := 1), 
+(x := 1845.13, y := -0.0197608, z := -7.83111, a := 12.1618, b := 179.533, c := -17.5603, mode := 1), 
+(x := 870.527, y := 441.189, z := 281.711, a := -156.07, b := 178.31, c := -6.5698, mode := 1), (x := 1027.31, 
+y := 430.963, z := 281.961, a := -144.563, b := 178.936, c := -174.961, mode := 1), (x := 1190.54, y := 437.334, 
+z := 283.798, a := -161.62, b := 178.373, c := -12.1842, mode := 1), (x := 1346.94, y := 427.899, z := 284.195, 
+a := -144.563, b := 178.936, c := -174.961, mode := 1), (x := 1510.12, y := 433.551, z := 285.372, a := -161.638, 
+b := 178.374, c := -12.2013, mode := 1), (x := 1666.67, y := 424.389, z := 288.532, a := -144.563, b := 178.936, 
+c := -174.96, mode := 1))
+basePOS_N : ARRAY[1..12] OF CARTPOS := ((x := 13, y := -13, z := -3.73454, a := 115.042, b := 179.322, 
+c := 85.487, mode := 1), (x := 177, y := -13, z := -3.73454, a := 115.042, b := 179.322, c := 85.507, 
+mode := 1), (x := 1403.04, y := -10.7175, z := -6.39312, a := 174.303, b := 179.174, c := -35.3569, mode := 1), 
+(x := 505.7, y := -13.2, z := -3.73454, a := 115.042, b := 179.322, c := 85.537, mode := 1), (x := 1672.24, 
+y := -10.7175, z := -9.24341, a := 166.514, b := 179.155, c := -43.1473, mode := 1), (x := 834.1, y := -13.2, 
+z := -3.73454, a := 115.042, b := 179.322, c := 85.537, mode := 1), (x := 870.527, y := 441.189, z := 281.711, 
+a := -156.07, b := 178.31, c := -6.5698, mode := 1), (x := 1027.31, y := 430.963, z := 281.961, a := -144.563, 
+b := 178.936, c := -174.961, mode := 1), (x := 1190.54, y := 437.334, z := 283.798, a := -161.62, b := 178.373, 
+c := -12.1842, mode := 1), (x := 1346.94, y := 427.899, z := 284.195, a := -144.563, b := 178.936, c := -174.961, 
+mode := 1), (x := 1510.12, y := 433.551, z := 285.372, a := -161.638, b := 178.374, c := -12.2013, mode := 1), 
+(x := 1666.67, y := 424.389, z := 288.532, a := -144.563, b := 178.936, c := -174.96, mode := 1))
+
+refLift : CARTREFSYS := (baseRefSys := MAP(World), z := 27) 
+refBoardup : CARTREFSYS:= (baseRefSys := MAP(refBoard), z := 30)
+refBoard : CARTREFSYS := (baseRefSys := MAP(World), x := 1015.7, y := 17.86, z := -9.25303, a := 90.3078, 
+b := 0.457615, c := -90.3704)
+vellift : DYNAMIC := (velAxis := 100, accAxis := 100, decAxis := 100, jerkAxis := 100, vel := 450, acc := 1600, 
+dec := 1300, jerk := 13000, velOri := 90, accOri := 180, decOri := 180, jerkOri := 50000)
+apGouduNeg : AXISPOS := (a1 := 4.39399, a2 := 26.626, a3 := 7.6309, a4 := -0.359637, a5 := 56.0781, a6 := 34.4193)
+rTrayVertDist : REAL := 2.5
+rTrayLength : REAL := 161.7
+Count_ok : BOOL
+
+
+turn1P : CARTPOS := (x := 1408.52, y := -439.033, z := 312.249, a := -133.589, b := 179.993, c := 106.577, 
+mode := 1)
+ap_ready_1p : AXISPOS := (a1 := 100.025, a2 := 28.4462, a3 := 29.789, a4 := 0.0305285, a5 := 31.2868, 
+a6 := 38.4755)
+turn2P : CARTPOS := (x := 1408.52, y := 429.543, z := 312.249, a := -133.483, b := 179.993, c := 106.684, 
+mode := 1)
+ap_ready_2p : AXISPOS := (a1 := -99.5297, a2 := 27.9233, a3 := 32.2109, a4 := -0.344929, a5 := 29.0298, 
+a6 := -159.662)
+
+
+belt2_Area : AREA := (refSys := MAP(World), startPos := (x := -260, y := 1150, z := 100), distX := 150, 
+distY := 590, distZ := 350, visibleDimensions := (TRUE, , ), moveSmoothly := (, , , , , , , ), workingTime_s := (, 
+, , , , , , ), smoothnessFactor := (, , , , , , , ))
+
+belt1_Area  : AREA := (refSys := MAP(World), startPos := (x := -292, y := -1780, z := 110), distX := 152, 
+distY := 630, distZ := 335, visibleDimensions := (TRUE, , ), moveSmoothly := (, , , , , , , ), workingTime_s := (, 
+, , , , , , ), smoothnessFactor := (, , , , , , , ))
+
+place_Area  : AREA := (refSys := MAP(World), startPos := (x := 790, y := -30, z := -20), distX := 1100, 
+distY := 60, distZ := 2000, visibleDimensions := (TRUE, , ), moveSmoothly := (, , , , , , , ), workingTime_s := (, 
+, , , , , , ), smoothnessFactor := (, , , , , , , ))
+ap0 : AXISPOS := ()
+ap_home : AXISPOS := (a1 := 0.000306677, a2 := 36.615, a3 := 14.7427, a4 := 0.00757287, a5 := 38.6468, 
+a6 := -60.172)
